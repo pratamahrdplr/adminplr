@@ -1,29 +1,31 @@
 <?php
 //core
-function dbcon(){
+function dbcon()
+{
 	$user = "root";
 	$pass = "";
 	$host = "localhost";
 	$db   = "sales";
-	mysql_connect($host,$user,$pass);
+	mysql_connect($host, $user, $pass);
 	mysql_select_db($db);
 }
 
-function host(){
-	$h = "http://".$_SERVER['HTTP_HOST']."/adminplr/";
+function host()
+{
+	$h = "http://" . $_SERVER['HTTP_HOST'] . "/adminplr/";
 	return $h;
 }
 
-function hRoot(){
-	$url = $_SERVER['DOCUMENT_ROOT']."/adminplr/";
+function hRoot()
+{
+	$url = $_SERVER['DOCUMENT_ROOT'] . "/adminplr/";
 	return $url;
 }
 
 //parse string
-function gstr(){
-    $qstr = $_SERVER['QUERY_STRING'];
-    parse_str($qstr,$dstr);
-    return $dstr;
+function gstr()
+{
+	$qstr = $_SERVER['QUERY_STRING'];
+	parse_str($qstr, $dstr);
+	return $dstr;
 }
-
-?>
