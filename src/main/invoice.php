@@ -4918,7 +4918,7 @@ $bln2 = $array_bln2[date('n')];
 	$user_query = mysql_query("select * from tb_user where id_user = $row_pn[id_user] ")or die(mysql_error());
 		$row_user = mysql_fetch_array($user_query);
 	
-$query1=mysql_query("update tb_po set no_invoice = 'INV/SBK-JATIM/$bln/$thn/0$row_pn[id_po]' where id_po = '$_GET[id_po]'") or die (mysql_error());
+$query1=mysql_query("update tb_po set no_invoice = 'INV/PLR-JATIM/$bln/$thn/0$row_pn[id_po]' where id_po = '$_GET[id_po]'") or die (mysql_error());
 $jumlah_desimal ="2";
 $pemisah_desimal =",";
 $pemisah_ribuan =".";
@@ -39249,7 +39249,7 @@ AQAA6asdAAAA
   style='mso-spacerun:yes'> </span></td>
   <td class=xl7316542  align=center valign=middle><font
   face="HP Simplified">:</font></td>
-  <td class=xl7816542  valign=middle><font face="HP Simplified">INV/SBK-JATIM/ <?php echo $bln ;?>/<?php echo $thn ; ?>/0<?php echo $row_pn['id_po']  ;?></font></td>
+  <td class=xl7816542  valign=middle><font face="HP Simplified">INV/PLR-JATIM/ <?php echo $bln ;?>/<?php echo $thn ; ?>/0<?php echo $row_pn['id_po']  ;?></font></td>
  </tr>
  <tr height=20 valign=bottom style='height:15.0pt'>
   <td height=20 class=xl7516542  valign=middle

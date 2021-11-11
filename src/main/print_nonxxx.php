@@ -1,19 +1,16 @@
-<?php		
-			include('dbcon.php');
+<?php
+include('dbcon.php');
 dbcon();
 
-			$query = "select * from tb_kontak_all ";
-			$result = mysql_query($query) or die(mysql_error());
-			$no = 1;  
-			
-			?>
+$query = "select * from tb_kontak_all ";
+$result = mysql_query($query) or die(mysql_error());
+$no = 1;
+
+?>
 
 
 
-<html xmlns:v="urn:schemas-microsoft-com:vml"
-xmlns:o="urn:schemas-microsoft-com:office:office"
-xmlns:x="urn:schemas-microsoft-com:office:excel"
-xmlns="http://www.w3.org/TR/REC-html40">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40">
 
 
 
@@ -23,11 +20,11 @@ xmlns="http://www.w3.org/TR/REC-html40">
 
 
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=utf-8">
-<meta name=ProgId content=Excel.Sheet>
-<meta name=Generator content="Microsoft Excel 12">
-<link rel=File-List href="Format%20Penawaran%20Baru_files/filelist.xml">
-<!--[if !mso]>
+  <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+  <meta name=ProgId content=Excel.Sheet>
+  <meta name=Generator content="Microsoft Excel 12">
+  <link rel=File-List href="Format%20Penawaran%20Baru_files/filelist.xml">
+  <!--[if !mso]>
 <style>
 v\:* {behavior:url(#default#VML);}
 o\:* {behavior:url(#default#VML);}
@@ -35,719 +32,762 @@ x\:* {behavior:url(#default#VML);}
 .shape {behavior:url(#default#VML);}
 </style>
 <![endif]-->
-<style id="Format Penawaran Baru_4119_Styles">
+  <style id="Format Penawaran Baru_4119_Styles">
+    <!--table
+    {
+      mso-displayed-decimal-separator: "\,";
+      mso-displayed-thousand-separator: "\.";
+    }
 
-<!--table
-	{mso-displayed-decimal-separator:"\,";
-	mso-displayed-thousand-separator:"\.";}
-.font54119
-	{color:black;
-	font-size:9.0pt;
-	font-weight:400;
-	font-style:italic;
-	text-decoration:none;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;}
-.xl154119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:11.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Calibri, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:General;
-	text-align:general;
-	vertical-align:bottom;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl664119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:9.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:General;
-	text-align:general;
-	vertical-align:bottom;	
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl674119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:9.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:"_\(\[$Rp-421\]* \#\,\#\#0\.00_\)\;_\(\[$Rp-421\]* \\\(\#\,\#\#0\.00\\\)\;_\(\[$Rp-421\]* \0022-\0022??_\)\;_\(\@_\)";
-	text-align:general;
-	vertical-align:bottom;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl684119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:9.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:General;
-	text-align:center;
-	vertical-align:bottom;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl694119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:9.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:General;
-	text-align:right;
-	vertical-align:bottom;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl704119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:9.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:"\[$-F800\]dddd\\\,\\ mmmm\\ dd\\\,\\ yyyy";
-	text-align:right;
-	vertical-align:bottom;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl714119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:9.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:"\[$-F800\]dddd\\\,\\ mmmm\\ dd\\\,\\ yyyy";
-	text-align:left;
-	vertical-align:bottom;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl724119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:9.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:underline;
-	text-underline-style:single;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:General;
-	text-align:general;
-	vertical-align:bottom;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl734119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:10.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:General;
-	text-align:general;
-	vertical-align:bottom;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl744119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:11.0pt;
-	font-weight:700;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Calibri, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:General;
-	text-align:general;
-	vertical-align:bottom;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl754119
-	{padding:0px;
-	mso-ignore:padding;
-	color:blue;
-	font-size:11.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:underline;
-	text-underline-style:single;
-	font-family:Calibri, sans-serif;
-	mso-font-charset:1;
-	mso-number-format:General;
-	text-align:general;
-	vertical-align:bottom;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl764119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:9.0pt;
-	font-weight:700;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:General;
-	text-align:general;
-	vertical-align:bottom;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl774119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:9.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:0%;
-	text-align:right;
-	vertical-align:bottom;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl784119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:9.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:"0\.0000%";
-	text-align:right;
-	vertical-align:bottom;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl794119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:9.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:General;
-	text-align:general;
-	vertical-align:bottom;
-	border-top:none;
-	border-right:none;
-	border-bottom:.5pt solid windowtext;
-	border-left:none;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl804119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:9.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:Percent;
-	text-align:right;
-	vertical-align:bottom;
-	border-top:none;
-	border-right:none;
-	border-bottom:.5pt solid windowtext;
-	border-left:none;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl814119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:9.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:General;
-	text-align:center;
-	vertical-align:bottom;
-	border-top:none;
-	border-right:none;
-	border-bottom:.5pt solid windowtext;
-	border-left:none;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl824119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:9.0pt;
-	font-weight:700;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:General;
-	text-align:general;
-	vertical-align:bottom;
-	border-top:.5pt solid windowtext;
-	border-right:none;
-	border-bottom:.5pt solid windowtext;
-	border-left:none;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl834119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:9.0pt;
-	font-weight:700;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:General;
-	text-align:center;
-	vertical-align:bottom;
-	border-top:.5pt solid windowtext;
-	border-right:none;
-	border-bottom:.5pt solid windowtext;
-	border-left:none;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl844119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:9.0pt;
-	font-weight:700;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:"_\(\[$Rp-421\]* \#\,\#\#0\.00_\)\;_\(\[$Rp-421\]* \\\(\#\,\#\#0\.00\\\)\;_\(\[$Rp-421\]* \0022-\0022??_\)\;_\(\@_\)";
-	text-align:general;
-	vertical-align:bottom;
-	border-top:.5pt solid windowtext;
-	border-right:none;
-	border-bottom:.5pt solid windowtext;
-	border-left:none;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl854119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:9.0pt;
-	font-weight:700;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:"_\(\[$Rp-421\]* \#\,\#\#0\.00_\)\;_\(\[$Rp-421\]* \\\(\#\,\#\#0\.00\\\)\;_\(\[$Rp-421\]* \0022-\0022??_\)\;_\(\@_\)";
-	text-align:general;
-	vertical-align:bottom;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl864119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:9.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:General;
-	text-align:left;
-	vertical-align:bottom;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl874119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:9.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:"\#\,\#\#0";
-	text-align:general;
-	vertical-align:bottom;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl884119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:8.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Arial, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:General;
-	text-align:general;
-	vertical-align:middle;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl894119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:9.0pt;
-	font-weight:700;
-	font-style:normal;
-	text-decoration:underline;
-	text-underline-style:single;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:General;
-	text-align:general;
-	vertical-align:bottom;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl904119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:8.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:General;
-	text-align:general;
-	vertical-align:bottom;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl914119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:11.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Calibri, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:"_\(\0022Rp\0022* \#\,\#\#0\.00_\)\;_\(\0022Rp\0022* \\\(\#\,\#\#0\.00\\\)\;_\(\0022Rp\0022* \0022-\0022_\)\;_\(\@_\)";
-	text-align:general;
-	vertical-align:bottom;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl924119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:9.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:"_\(\0022Rp\0022* \#\,\#\#0\.00_\)\;_\(\0022Rp\0022* \\\(\#\,\#\#0\.00\\\)\;_\(\0022Rp\0022* \0022-\0022_\)\;_\(\@_\)";
-	text-align:general;
-	vertical-align:bottom;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl934119
-	{padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:9.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:"_\(\0022Rp\0022* \#\,\#\#0\.00_\)\;_\(\0022Rp\0022* \\\(\#\,\#\#0\.00\\\)\;_\(\0022Rp\0022* \0022-\0022_\)\;_\(\@_\)";
-	text-align:general;
-	vertical-align:bottom;
-	border-top:none;
-	border-right:none;
-	border-bottom:.5pt solid windowtext;
-	border-left:none;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl9241191 {padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:9.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:"_\(\0022Rp\0022* \#\,\#\#0\.00_\)\;_\(\0022Rp\0022* \\\(\#\,\#\#0\.00\\\)\;_\(\0022Rp\0022* \0022-\0022_\)\;_\(\@_\)";
-	text-align:general;
-	vertical-align:bottom;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl9041191 {padding:0px;
-	mso-ignore:padding;
-	color:black;
-	font-size:8.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Verdana, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:General;
-	text-align:general;
-	vertical-align:bottom;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
--->
+    .font54119 {
+      color: black;
+      font-size: 9.0pt;
+      font-weight: 400;
+      font-style: italic;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+    }
+
+    .xl154119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 11.0pt;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Calibri, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: General;
+      text-align: general;
+      vertical-align: bottom;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl664119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 9.0pt;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: General;
+      text-align: general;
+      vertical-align: bottom;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl674119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 9.0pt;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: "_\(\[$Rp-421\]* \#\,\#\#0\.00_\)\;_\(\[$Rp-421\]* \\\(\#\,\#\#0\.00\\\)\;_\(\[$Rp-421\]* \0022-\0022??_\)\;_\(\@_\)";
+      text-align: general;
+      vertical-align: bottom;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl684119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 9.0pt;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: General;
+      text-align: center;
+      vertical-align: bottom;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl694119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 9.0pt;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: General;
+      text-align: right;
+      vertical-align: bottom;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl704119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 9.0pt;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: "\[$-F800\]dddd\\\,\\ mmmm\\ dd\\\,\\ yyyy";
+      text-align: right;
+      vertical-align: bottom;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl714119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 9.0pt;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: "\[$-F800\]dddd\\\,\\ mmmm\\ dd\\\,\\ yyyy";
+      text-align: left;
+      vertical-align: bottom;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl724119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 9.0pt;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: underline;
+      text-underline-style: single;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: General;
+      text-align: general;
+      vertical-align: bottom;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl734119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 10.0pt;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: General;
+      text-align: general;
+      vertical-align: bottom;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl744119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 11.0pt;
+      font-weight: 700;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Calibri, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: General;
+      text-align: general;
+      vertical-align: bottom;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl754119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: blue;
+      font-size: 11.0pt;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: underline;
+      text-underline-style: single;
+      font-family: Calibri, sans-serif;
+      mso-font-charset: 1;
+      mso-number-format: General;
+      text-align: general;
+      vertical-align: bottom;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl764119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 9.0pt;
+      font-weight: 700;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: General;
+      text-align: general;
+      vertical-align: bottom;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl774119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 9.0pt;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: 0%;
+      text-align: right;
+      vertical-align: bottom;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl784119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 9.0pt;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: "0\.0000%";
+      text-align: right;
+      vertical-align: bottom;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl794119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 9.0pt;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: General;
+      text-align: general;
+      vertical-align: bottom;
+      border-top: none;
+      border-right: none;
+      border-bottom: .5pt solid windowtext;
+      border-left: none;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl804119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 9.0pt;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: Percent;
+      text-align: right;
+      vertical-align: bottom;
+      border-top: none;
+      border-right: none;
+      border-bottom: .5pt solid windowtext;
+      border-left: none;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl814119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 9.0pt;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: General;
+      text-align: center;
+      vertical-align: bottom;
+      border-top: none;
+      border-right: none;
+      border-bottom: .5pt solid windowtext;
+      border-left: none;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl824119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 9.0pt;
+      font-weight: 700;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: General;
+      text-align: general;
+      vertical-align: bottom;
+      border-top: .5pt solid windowtext;
+      border-right: none;
+      border-bottom: .5pt solid windowtext;
+      border-left: none;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl834119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 9.0pt;
+      font-weight: 700;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: General;
+      text-align: center;
+      vertical-align: bottom;
+      border-top: .5pt solid windowtext;
+      border-right: none;
+      border-bottom: .5pt solid windowtext;
+      border-left: none;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl844119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 9.0pt;
+      font-weight: 700;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: "_\(\[$Rp-421\]* \#\,\#\#0\.00_\)\;_\(\[$Rp-421\]* \\\(\#\,\#\#0\.00\\\)\;_\(\[$Rp-421\]* \0022-\0022??_\)\;_\(\@_\)";
+      text-align: general;
+      vertical-align: bottom;
+      border-top: .5pt solid windowtext;
+      border-right: none;
+      border-bottom: .5pt solid windowtext;
+      border-left: none;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl854119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 9.0pt;
+      font-weight: 700;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: "_\(\[$Rp-421\]* \#\,\#\#0\.00_\)\;_\(\[$Rp-421\]* \\\(\#\,\#\#0\.00\\\)\;_\(\[$Rp-421\]* \0022-\0022??_\)\;_\(\@_\)";
+      text-align: general;
+      vertical-align: bottom;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl864119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 9.0pt;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: General;
+      text-align: left;
+      vertical-align: bottom;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl874119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 9.0pt;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: "\#\,\#\#0";
+      text-align: general;
+      vertical-align: bottom;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl884119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 8.0pt;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: General;
+      text-align: general;
+      vertical-align: middle;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl894119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 9.0pt;
+      font-weight: 700;
+      font-style: normal;
+      text-decoration: underline;
+      text-underline-style: single;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: General;
+      text-align: general;
+      vertical-align: bottom;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl904119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 8.0pt;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: General;
+      text-align: general;
+      vertical-align: bottom;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl914119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 11.0pt;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Calibri, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: "_\(\0022Rp\0022* \#\,\#\#0\.00_\)\;_\(\0022Rp\0022* \\\(\#\,\#\#0\.00\\\)\;_\(\0022Rp\0022* \0022-\0022_\)\;_\(\@_\)";
+      text-align: general;
+      vertical-align: bottom;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl924119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 9.0pt;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: "_\(\0022Rp\0022* \#\,\#\#0\.00_\)\;_\(\0022Rp\0022* \\\(\#\,\#\#0\.00\\\)\;_\(\0022Rp\0022* \0022-\0022_\)\;_\(\@_\)";
+      text-align: general;
+      vertical-align: bottom;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl934119 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 9.0pt;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: "_\(\0022Rp\0022* \#\,\#\#0\.00_\)\;_\(\0022Rp\0022* \\\(\#\,\#\#0\.00\\\)\;_\(\0022Rp\0022* \0022-\0022_\)\;_\(\@_\)";
+      text-align: general;
+      vertical-align: bottom;
+      border-top: none;
+      border-right: none;
+      border-bottom: .5pt solid windowtext;
+      border-left: none;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl9241191 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 9.0pt;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: "_\(\0022Rp\0022* \#\,\#\#0\.00_\)\;_\(\0022Rp\0022* \\\(\#\,\#\#0\.00\\\)\;_\(\0022Rp\0022* \0022-\0022_\)\;_\(\@_\)";
+      text-align: general;
+      vertical-align: bottom;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+
+    .xl9041191 {
+      padding: 0px;
+      mso-ignore: padding;
+      color: black;
+      font-size: 8.0pt;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      mso-font-charset: 0;
+      mso-number-format: General;
+      text-align: general;
+      vertical-align: bottom;
+      mso-background-source: auto;
+      mso-pattern: auto;
+      white-space: nowrap;
+    }
+    -->
 
 
-</style>
+  </style>
 </head>
 
 <body onLoad="window.print();return false">
-<!--[if !excel]>&nbsp;&nbsp;<![endif]-->
-<!--The following information was generated by Microsoft Office Excel's Publish
+  <!--[if !excel]>&nbsp;&nbsp;<![endif]-->
+  <!--The following information was generated by Microsoft Office Excel's Publish
 as Web Page wizard.-->
-<!--If the same item is republished from Excel, all information between the DIV
+  <!--If the same item is republished from Excel, all information between the DIV
 tags will be replaced.-->
-<!----------------------------->
-<!--START OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD -->
-<!----------------------------->
+  <!----------------------------->
+  <!--START OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD -->
+  <!----------------------------->
 
-<div id="Format Penawaran Baru_4119" align=center x:publishsource="Excel">
-<?php
+  <div id="Format Penawaran Baru_4119" align=center x:publishsource="Excel">
+    <?php
 
 
-	$penawaran_query = mysql_query("select * from tb_penawaran where id_penawaran = '$_GET[id_penawaran]'")or die(mysql_error());
-		while($row_pn = mysql_fetch_array($penawaran_query)){
-		$array_bln = array("","I","II","III","IV","V","VI","VII","VIII","IX","X","XI","XII");
-		$bln = $array_bln[date('n')];
-		$tgl = date('d');
-		if($tgl <= 14 ){
-		$periode = 1;
-		$periode2 = 14;
-		}
-		else if( $tgl >=14){
-		$periode = 15;
-		$hari_ini = date("Y-m-d");
-		$periode2 = date('t', strtotime($hari_ini));
-		}
-		
-		
-		
-		
-		$thn = date('Y');
-		$array_bln2 = array("","Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember");
-$bln2 = $array_bln2[date('n')];
+    $penawaran_query = mysql_query("select * from tb_penawaran where id_penawaran = '$_GET[id_penawaran]'") or die(mysql_error());
+    while ($row_pn = mysql_fetch_array($penawaran_query)) {
+      $array_bln = array("", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII");
+      $bln = $array_bln[date('n')];
+      $tgl = date('d');
+      if ($tgl <= 14) {
+        $periode = 1;
+        $periode2 = 14;
+      } else if ($tgl >= 14) {
+        $periode = 15;
+        $hari_ini = date("Y-m-d");
+        $periode2 = date('t', strtotime($hari_ini));
+      }
 
-		$pelanggan_query = mysql_query("select * from tb_kontak_all where id_kontak = $row_pn[id_kontak] ")or die(mysql_error());
-		$row = mysql_fetch_array($pelanggan_query);
-		
-	$nama_upper = $row['nama_kontak']; 
-	$cp_upper = $row['cp_kontak']; 
-			$nama_pel = strtoupper($nama_upper);
-			$cp_pel = strtoupper($cp_upper);
-			
-			
-	$user_query = mysql_query("select * from tb_user where id_user = $row_pn[id_user] ")or die(mysql_error());
-		$row_user = mysql_fetch_array($user_query);
-		
-$area = $row_user['kota'];
 
-if($area == 'surabaya')
-{
-	$areax='SBY';
-}
-elseif($area == 'SURABAYA')
-{
-	$areax='SBY'; 
-}
-elseif($area == 'probolinggo')
-{
-	$areax='PRB'; 
-}
-elseif($area == 'PROBOLINGGO')
-{
-	$areax='PRB'; 
-}
-elseif($area == 'semarang')
-{
-	$areax='SMG'; 
-}
-elseif($area == 'SEMARANG')
-{
-	$areax='SMG'; 
-}
-elseif($area == 'juwana')
-{
-	$areax='JWN'; 
-}
-elseif($area == 'JUWANA')
-{
-	$areax='JWN'; 
-}
-elseif($area == 'cirebon')
-{
-	$areax='CRB'; 
-}
-elseif($area == 'CIREBON')
-{
-	$areax='CRB'; 
-}
-elseif($area == 'all')
-{
-	$areax='SBY'; 
-}
-	
 
-$harga = $row_pn['harga_penawaran'];
-$ppn = 0.1;
-$pbbkb = 0.008585;
-$pph = 0.003;
 
-$tpajak = ($ppn+$pbbkb+$pph)+1 ;
-$hppn = $harga/$tpajak*$ppn;
-$hpbbkb = $harga/$tpajak*$pbbkb;
-$hpph = $harga/$tpajak*$pph;
-$harga_dasar = $harga-$hppn-$hpph-$hpbbkb;
-$harga_dasar_ppn = $harga/1.1;
-$hppn_ppn = $harga_dasar_ppn*0.1;
+      $thn = date('Y');
+      $array_bln2 = array("", "Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "Nopember", "Desember");
+      $bln2 = $array_bln2[date('n')];
 
-$querypen=mysql_query("update tb_penawaran set no_penawaran = '0$row_pn[id_penawaran]/SBK-HSD-$areax/$bln/$thn', ppn = '$hppn' , ppn_ppn = '$hppn_ppn' ,pbbkb = '$hpbbkb' , pph = '$hpph' , harga_dasar = '$harga_dasar' , harga_dasar_ppn = '$harga_dasar_ppn' where id_penawaran = '$_GET[id_penawaran]'") or die (mysql_error());
-$pen_query = mysql_query("select * from tb_penawaran where id_penawaran = '$_GET[id_penawaran]'")or die(mysql_error());
-$row_ppn = mysql_fetch_array($pen_query);
-		?>
-<table border=0 cellpadding=0 cellspacing=0 width=605 class=xl664119 style='border-collapse:collapse ; table-layout:fixed;width:455pt'>
- <col class=xl664119 width=60 style='mso-width-source:userset;mso-width-alt:
+      $pelanggan_query = mysql_query("select * from tb_kontak_all where id_kontak = $row_pn[id_kontak] ") or die(mysql_error());
+      $row = mysql_fetch_array($pelanggan_query);
+
+      $nama_upper = $row['nama_kontak'];
+      $cp_upper = $row['cp_kontak'];
+      $nama_pel = strtoupper($nama_upper);
+      $cp_pel = strtoupper($cp_upper);
+
+
+      $user_query = mysql_query("select * from tb_user where id_user = $row_pn[id_user] ") or die(mysql_error());
+      $row_user = mysql_fetch_array($user_query);
+
+      $area = $row_user['kota'];
+
+      if ($area == 'surabaya') {
+        $areax = 'SBY';
+      } elseif ($area == 'SURABAYA') {
+        $areax = 'SBY';
+      } elseif ($area == 'probolinggo') {
+        $areax = 'PRB';
+      } elseif ($area == 'PROBOLINGGO') {
+        $areax = 'PRB';
+      } elseif ($area == 'semarang') {
+        $areax = 'SMG';
+      } elseif ($area == 'SEMARANG') {
+        $areax = 'SMG';
+      } elseif ($area == 'juwana') {
+        $areax = 'JWN';
+      } elseif ($area == 'JUWANA') {
+        $areax = 'JWN';
+      } elseif ($area == 'cirebon') {
+        $areax = 'CRB';
+      } elseif ($area == 'CIREBON') {
+        $areax = 'CRB';
+      } elseif ($area == 'all') {
+        $areax = 'SBY';
+      }
+
+
+      $harga = $row_pn['harga_penawaran'];
+      $ppn = 0.1;
+      $pbbkb = 0.008585;
+      $pph = 0.003;
+
+      $tpajak = ($ppn + $pbbkb + $pph) + 1;
+      $hppn = $harga / $tpajak * $ppn;
+      $hpbbkb = $harga / $tpajak * $pbbkb;
+      $hpph = $harga / $tpajak * $pph;
+      $harga_dasar = $harga - $hppn - $hpph - $hpbbkb;
+      $harga_dasar_ppn = $harga / 1.1;
+      $hppn_ppn = $harga_dasar_ppn * 0.1;
+
+      $querypen = mysql_query("update tb_penawaran set no_penawaran = '0$row_pn[id_penawaran]/PLR-HSD-$areax/$bln/$thn', ppn = '$hppn' , ppn_ppn = '$hppn_ppn' ,pbbkb = '$hpbbkb' , pph = '$hpph' , harga_dasar = '$harga_dasar' , harga_dasar_ppn = '$harga_dasar_ppn' where id_penawaran = '$_GET[id_penawaran]'") or die(mysql_error());
+      $pen_query = mysql_query("select * from tb_penawaran where id_penawaran = '$_GET[id_penawaran]'") or die(mysql_error());
+      $row_ppn = mysql_fetch_array($pen_query);
+    ?>
+      <table border=0 cellpadding=0 cellspacing=0 width=605 class=xl664119 style='border-collapse:collapse ; table-layout:fixed;width:455pt'>
+        <col class=xl664119 width=60 style='mso-width-source:userset;mso-width-alt:
  2194;width:45pt'>
- <col class=xl664119 width=15 style='mso-width-source:userset;mso-width-alt:
+        <col class=xl664119 width=15 style='mso-width-source:userset;mso-width-alt:
  548;width:11pt'>
- <col class=xl664119 width=17 style='mso-width-source:userset;mso-width-alt:
+        <col class=xl664119 width=17 style='mso-width-source:userset;mso-width-alt:
  621;width:13pt'>
- <col class=xl664119 width=64 style='width:48pt'>
- <col class=xl664119 width=15 style='mso-width-source:userset;mso-width-alt:
+        <col class=xl664119 width=64 style='width:48pt'>
+        <col class=xl664119 width=15 style='mso-width-source:userset;mso-width-alt:
  548;width:11pt'>
- <col class=xl664119 width=18 style='mso-width-source:userset;mso-width-alt:
+        <col class=xl664119 width=18 style='mso-width-source:userset;mso-width-alt:
  658;width:14pt'>
- <col class=xl664119 width=84 style='mso-width-source:userset;mso-width-alt:
+        <col class=xl664119 width=84 style='mso-width-source:userset;mso-width-alt:
  3072;width:63pt'>
- <col class=xl664119 width=14 style='mso-width-source:userset;mso-width-alt:
+        <col class=xl664119 width=14 style='mso-width-source:userset;mso-width-alt:
  512;width:11pt'>
- <col class=xl664119 width=13 style='mso-width-source:userset;mso-width-alt:
+        <col class=xl664119 width=13 style='mso-width-source:userset;mso-width-alt:
  475;width:10pt'>
- <col class=xl674119 width=110 style='mso-width-source:userset;mso-width-alt:
+        <col class=xl674119 width=110 style='mso-width-source:userset;mso-width-alt:
  4022;width:83pt'>
- <col class=xl674119 width=131 style='mso-width-source:userset;mso-width-alt:
+        <col class=xl674119 width=131 style='mso-width-source:userset;mso-width-alt:
  4790;width:98pt'>
- <col class=xl664119 width=64 style='width:48pt'>
- <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
-   <td height=20 style='height:15.0pt;width:45pt' align=left
-  valign=top>&nbsp;</td>
-   <td class=xl664119 style='width:11pt'></td>
-   <td class=xl664119 style='width:13pt'></td>
-   <td class=xl664119 style='width:48pt'></td>
-   <td class=xl664119 style='width:11pt'></td>
-   <td class=xl664119 style='width:14pt'></td>
-   <td class=xl664119 style='width:63pt'></td>
-   <td class=xl664119 style='width:11pt'></td>
-   <td class=xl664119 style='width:10pt'></td>
-   <td class=xl674119 style='width:83pt'></td>
-   <td class=xl674119 style='width:98pt'></td>
-   <td class=xl664119 style='width:48pt'></td>
- </tr>
- <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
-   <td height=20 style='height:15.0pt;width:45pt' align=left
-  valign=top>&nbsp;</td>
-   <td class=xl664119 style='width:11pt'></td>
-   <td class=xl664119 style='width:13pt'></td>
-   <td class=xl664119 style='width:48pt'></td>
-   <td class=xl664119 style='width:11pt'></td>
-   <td class=xl664119 style='width:14pt'></td>
-   <td class=xl664119 style='width:63pt'></td>
-   <td class=xl664119 style='width:11pt'></td>
-   <td class=xl664119 style='width:10pt'></td>
-   <td class=xl674119 style='width:83pt'></td>
-   <td class=xl674119 style='width:98pt'></td>
-   <td class=xl664119 style='width:48pt'></td>
- </tr>
- <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
-  <td height=20 width=60 style='height:15.0pt;width:45pt' align=left
-  valign=top><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+        <col class=xl664119 width=64 style='width:48pt'>
+        <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
+          <td height=20 style='height:15.0pt;width:45pt' align=left valign=top>&nbsp;</td>
+          <td class=xl664119 style='width:11pt'></td>
+          <td class=xl664119 style='width:13pt'></td>
+          <td class=xl664119 style='width:48pt'></td>
+          <td class=xl664119 style='width:11pt'></td>
+          <td class=xl664119 style='width:14pt'></td>
+          <td class=xl664119 style='width:63pt'></td>
+          <td class=xl664119 style='width:11pt'></td>
+          <td class=xl664119 style='width:10pt'></td>
+          <td class=xl674119 style='width:83pt'></td>
+          <td class=xl674119 style='width:98pt'></td>
+          <td class=xl664119 style='width:48pt'></td>
+        </tr>
+        <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
+          <td height=20 style='height:15.0pt;width:45pt' align=left valign=top>&nbsp;</td>
+          <td class=xl664119 style='width:11pt'></td>
+          <td class=xl664119 style='width:13pt'></td>
+          <td class=xl664119 style='width:48pt'></td>
+          <td class=xl664119 style='width:11pt'></td>
+          <td class=xl664119 style='width:14pt'></td>
+          <td class=xl664119 style='width:63pt'></td>
+          <td class=xl664119 style='width:11pt'></td>
+          <td class=xl664119 style='width:10pt'></td>
+          <td class=xl674119 style='width:83pt'></td>
+          <td class=xl674119 style='width:98pt'></td>
+          <td class=xl664119 style='width:48pt'></td>
+        </tr>
+        <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
+          <td height=20 width=60 style='height:15.0pt;width:45pt' align=left valign=top>
+            <!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
    o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
    stroked="f">
    <v:stroke joinstyle="miter"/>
@@ -1380,616 +1420,767 @@ AAAAAA==
     <x:CF>Bitmap</x:CF>
     <x:AutoPict/>
    </x:ClientData>
-  </v:shape><![endif]--><![if !vml]><span style='mso-ignore: vglayout; position: absolute; z-index: 1; margin-left: 3px; margin-top: 5px; width: 590px; height: 104px; left: 6px; top: -1px;'><img width=784 height=168
-  src="penawaran_files/penawaranatas.jpg"
-  v:shapes="Picture_x0020_1 Picture_x0020_2"></span><![endif]><span
-  style='mso-ignore:vglayout2'>
-  <table cellpadding=0 cellspacing=0>
-   <tr>
-    <td height=20 class=xl664119 width=60 style='height:15.0pt;width:45pt'><a
-    name="RANGE!A1:L62"></a></td>
-   </tr>
-  </table>
-  </span></td>
-  <td class=xl664119 width=15 style='width:11pt'></td>
-  <td class=xl664119 width=17 style='width:13pt'></td>
-  <td class=xl664119 width=64 style='width:48pt'></td>
-  <td class=xl664119 width=15 style='width:11pt'></td>
-  <td class=xl664119 width=18 style='width:14pt'></td>
-  <td class=xl664119 width=84 style='width:63pt'></td>
-  <td class=xl664119 width=14 style='width:11pt'></td>
-  <td class=xl664119 width=13 style='width:10pt'></td>
-  <td class=xl674119 width=110 style='width:83pt'></td>
-  <td class=xl674119 width=131 style='width:98pt'></td>
-  <td class=xl664119 width=64 style='width:48pt'></td>
- </tr>
- <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
-   <td height=20 class=xl664119 style='height:15.0pt'></td>
-   <td class=xl664119></td>
-   <td class=xl664119></td>
-   <td class=xl664119></td>
-   <td class=xl664119></td>
-   <td class=xl664119></td>
-   <td class=xl664119></td>
-   <td class=xl664119></td>
-   <td class=xl664119></td>
-   <td class=xl674119></td>
-   <td class=xl674119></td>
-   <td class=xl664119></td>
- </tr>
- <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
-  <td height=20 class=xl664119 style='height:15.0pt'></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl674119></td>
-  <td class=xl674119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
-  <td height=20 class=xl664119 style='height:15.0pt'></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl674119></td>
-  <td class=xl674119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
-  <td height=20 class=xl664119 style='height:15.0pt'></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl674119></td>
-  <td class=xl674119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
-  <td height=20 class=xl664119 style='height:15.0pt'></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl674119></td>
-  <td class=xl674119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=20 valign=bottom style='height:15.0pt'>
-  <td height=20 class=xl664119 style='height:15.0pt'><font face="Verdana">Nomor</font></td>
-  <td class=xl684119 align=center><font face="Verdana">:</font></td>
-  <td class=xl154119 colspan=5>0<?php echo $row_pn['id_penawaran'] ; ?>/SBK-HSD-<?php echo $areax ?>/<?php echo $bln?>/<?php echo $thn?></td>
-  <td class=xl664119></td>
-  <td class=xl694119></td>
-  <?php
-if($area == 'surabaya')
-{
-	$areak='Surabaya';
-}
-elseif($area == 'SURABAYA')
-{
-	$areak='Surabaya'; 
-}
-elseif($area == 'probolinggo')
-{
-	$areak='Probolinggo'; 
-}
-elseif($area == 'PROBOLINGGO')
-{
-	$areak='Probolinggo'; 
-}
-elseif($area == 'semarang')
-{
-	$areak='Semarang'; 
-}
-elseif($area == 'SEMARANG')
-{
-	$areak='Semarang'; 
-}
-elseif($area == 'juwana')
-{
-	$areak='Juwana'; 
-}
-elseif($area == 'JUWANA')
-{
-	$areak='Juwana'; 
-}
-elseif($area == 'cirebon')
-{
-	$areak='Cirebon'; 
-}
-elseif($area == 'CIREBON')
-{
-	$areak='Cirebon'; 
-}
-elseif($area == 'all')
-{
-	$areak='Surabaya'; 
-}
-?>
-  <td class=xl704119 align=right><font face="Verdana"><?php echo $areak ?>,<span
-  style='mso-spacerun:yes'> </span></font></td>
-  <td class=xl714119><font face="Verdana" color="#000000"><?php echo $tgl ?> <?php echo $bln2 ?> <?php echo $thn ?></font></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 style='height:11.25pt'><font face="Verdana">Perihal</font></td>
-  <td class=xl684119 align=center><font face="Verdana">:</font></td>
-  <td class=xl724119 colspan=8><font face="Verdana"><u>Penawaran BBM HSD</u></font></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 style='height:11.25pt'></td>
-  <td class=xl684119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=17 valign=bottom style='height:12.75pt'>
-  <td height=17 class=xl734119 style='height:12.75pt'><font face="Verdana">Kepada<span
-  style='mso-spacerun:yes'> </span></font></td>
-  <td class=xl684119 align=center><font face="Verdana">:</font></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=20 valign=bottom style='height:15.0pt'>
-  <td height=20 class=xl744119 colspan=4 style='height:15.0pt'><b><?php echo $nama_pel ; ?></b></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl674119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 colspan=2 style='height:11.25pt'><font
-  face="Verdana"><?php echo $row['kota_kontak'] ; ?></font></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 style='height:11.25pt'></td>
-  <td class=xl684119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl674119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=20 valign=bottom style='height:15.0pt'>
-  <td height=20 class=xl664119 style='height:15.0pt'><font face="Verdana">Up</font></td>
-  <td class=xl684119 align=center><font face="Verdana">:</font></td>
-  <td class=xl154119 colspan=2><?php echo $cp_pel ; ?></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl694119></td>
-  <td class=xl674119></td>
-  <td class=xl674119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=20 valign=bottom style='height:15.0pt'>
-  <td height=20 class=xl664119 style='height:15.0pt'><font face="Verdana">Telp/Fax</font></td>
-  <td class=xl684119 align=center><font face="Verdana">:</font></td>
-  <td class=xl154119 colspan=5><?php echo $row['telepon_kontak'] ; ?>, <?php echo $row['telepon_kontak2'] ; ?> - <?php echo $row['fax_kontak'] ; ?></td>
-  <td class=xl664119></td>
-  <td class=xl694119></td>
-  <td class=xl674119></td>
-  <td class=xl674119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=20 valign=bottom style='height:15.0pt'>
-  <td height=20 class=xl664119 style='height:15.0pt'><font face="Verdana">Email</font></td>
-  <td class=xl684119 align=center><font face="Verdana">:</font></td>
-  <td class=xl754119 colspan=5><u><?php echo $row['email_kontak'] ; ?></u></td>
-  <td class=xl664119></td>
-  <td class=xl694119></td>
-  <td class=xl674119></td>
-  <td class=xl674119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 style='height:11.25pt'></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl674119></td>
-  <td class=xl674119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 colspan=4 style='height:11.25pt'><font
-  face="Verdana">Dengan Hormat,</font></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl674119></td>
-  <td class=xl674119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 style='height:11.25pt'></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
+  </v:shape><![endif]-->
+            <![if !vml]><span style='mso-ignore: vglayout; position: absolute; z-index: 1; margin-left: 3px; margin-top: 5px; width: 590px; height: 104px; left: 6px; top: -1px;'><img width=784 height=168 src="penawaran_files/penawaranatas.jpg" v:shapes="Picture_x0020_1 Picture_x0020_2"></span>
+            <![endif]><span style='mso-ignore:vglayout2'>
+              <table cellpadding=0 cellspacing=0>
+                <tr>
+                  <td height=20 class=xl664119 width=60 style='height:15.0pt;width:45pt'><a name="RANGE!A1:L62"></a></td>
+                </tr>
+              </table>
+            </span>
+          </td>
+          <td class=xl664119 width=15 style='width:11pt'></td>
+          <td class=xl664119 width=17 style='width:13pt'></td>
+          <td class=xl664119 width=64 style='width:48pt'></td>
+          <td class=xl664119 width=15 style='width:11pt'></td>
+          <td class=xl664119 width=18 style='width:14pt'></td>
+          <td class=xl664119 width=84 style='width:63pt'></td>
+          <td class=xl664119 width=14 style='width:11pt'></td>
+          <td class=xl664119 width=13 style='width:10pt'></td>
+          <td class=xl674119 width=110 style='width:83pt'></td>
+          <td class=xl674119 width=131 style='width:98pt'></td>
+          <td class=xl664119 width=64 style='width:48pt'></td>
+        </tr>
+        <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
+          <td height=20 class=xl664119 style='height:15.0pt'></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl674119></td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
+          <td height=20 class=xl664119 style='height:15.0pt'></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl674119></td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
+          <td height=20 class=xl664119 style='height:15.0pt'></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl674119></td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
+          <td height=20 class=xl664119 style='height:15.0pt'></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl674119></td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
+          <td height=20 class=xl664119 style='height:15.0pt'></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl674119></td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=20 valign=bottom style='height:15.0pt'>
+          <td height=20 class=xl664119 style='height:15.0pt'>
+            <font face="Verdana">Nomor</font>
+          </td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">:</font>
+          </td>
+          <td class=xl154119 colspan=5>0<?php echo $row_pn['id_penawaran']; ?>/PLR-HSD-<?php echo $areax ?>/<?php echo $bln ?>/<?php echo $thn ?></td>
+          <td class=xl664119></td>
+          <td class=xl694119></td>
+          <?php
+          if ($area == 'surabaya') {
+            $areak = 'Surabaya';
+          } elseif ($area == 'SURABAYA') {
+            $areak = 'Surabaya';
+          } elseif ($area == 'probolinggo') {
+            $areak = 'Probolinggo';
+          } elseif ($area == 'PROBOLINGGO') {
+            $areak = 'Probolinggo';
+          } elseif ($area == 'semarang') {
+            $areak = 'Semarang';
+          } elseif ($area == 'SEMARANG') {
+            $areak = 'Semarang';
+          } elseif ($area == 'juwana') {
+            $areak = 'Juwana';
+          } elseif ($area == 'JUWANA') {
+            $areak = 'Juwana';
+          } elseif ($area == 'cirebon') {
+            $areak = 'Cirebon';
+          } elseif ($area == 'CIREBON') {
+            $areak = 'Cirebon';
+          } elseif ($area == 'all') {
+            $areak = 'Surabaya';
+          }
+          ?>
+          <td class=xl704119 align=right>
+            <font face="Verdana"><?php echo $areak ?>,<span style='mso-spacerun:yes'> </span></font>
+          </td>
+          <td class=xl714119>
+            <font face="Verdana" color="#000000"><?php echo $tgl ?> <?php echo $bln2 ?> <?php echo $thn ?></font>
+          </td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 style='height:11.25pt'>
+            <font face="Verdana">Perihal</font>
+          </td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">:</font>
+          </td>
+          <td class=xl724119 colspan=8>
+            <font face="Verdana"><u>Penawaran BBM HSD</u></font>
+          </td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 style='height:11.25pt'></td>
+          <td class=xl684119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=17 valign=bottom style='height:12.75pt'>
+          <td height=17 class=xl734119 style='height:12.75pt'>
+            <font face="Verdana">Kepada<span style='mso-spacerun:yes'> </span></font>
+          </td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">:</font>
+          </td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=20 valign=bottom style='height:15.0pt'>
+          <td height=20 class=xl744119 colspan=4 style='height:15.0pt'><b><?php echo $nama_pel; ?></b></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 colspan=2 style='height:11.25pt'>
+            <font face="Verdana"><?php echo $row['kota_kontak']; ?></font>
+          </td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 style='height:11.25pt'></td>
+          <td class=xl684119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=20 valign=bottom style='height:15.0pt'>
+          <td height=20 class=xl664119 style='height:15.0pt'>
+            <font face="Verdana">Up</font>
+          </td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">:</font>
+          </td>
+          <td class=xl154119 colspan=2><?php echo $cp_pel; ?></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl694119></td>
+          <td class=xl674119></td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=20 valign=bottom style='height:15.0pt'>
+          <td height=20 class=xl664119 style='height:15.0pt'>
+            <font face="Verdana">Telp/Fax</font>
+          </td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">:</font>
+          </td>
+          <td class=xl154119 colspan=5><?php echo $row['telepon_kontak']; ?>, <?php echo $row['telepon_kontak2']; ?> - <?php echo $row['fax_kontak']; ?></td>
+          <td class=xl664119></td>
+          <td class=xl694119></td>
+          <td class=xl674119></td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=20 valign=bottom style='height:15.0pt'>
+          <td height=20 class=xl664119 style='height:15.0pt'>
+            <font face="Verdana">Email</font>
+          </td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">:</font>
+          </td>
+          <td class=xl754119 colspan=5><u><?php echo $row['email_kontak']; ?></u></td>
+          <td class=xl664119></td>
+          <td class=xl694119></td>
+          <td class=xl674119></td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 style='height:11.25pt'></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl674119></td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 colspan=4 style='height:11.25pt'>
+            <font face="Verdana">Dengan Hormat,</font>
+          </td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl674119></td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 style='height:11.25pt'></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
 
-  <td class=xl674119></td>
-  <td class=xl674119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 colspan="12" class=xl664119 style='height:11.25pt'><font face="Verdana"><span
-  style='mso-spacerun:yes'>Bersama ini kami dari PT. Sinar Bacan Khatulistiwa<b>,</b></span></font></td>
-  </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 colspan=12 style='height:11.25pt'><font
-  face="Verdana">ingin mengajukan penawaran Bahan Bakar Minyak Solar, maka dengan ini
-  perkenankan kami<br> 
-  menyampaikan penawaran untuk produk (solar industri)<strong> </strong>adalah sebagai
-  berikut :</font></span></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 colspan=11 style='height:11.25pt'><font
-  face="Verdana"></font></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 style='height:11.25pt'></td>
-  <td class=xl664119><font face="Verdana">*</font></td>
-  <td class=xl664119 colspan=2><font face="Verdana">HSD</font></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl684119 align=center><font face="Verdana">:</font></td>
-  <td class=xl664119></td>
-  <td class=xl664119 colspan=2><font face="Verdana">Berat Jenis 0,82 s/d 0,85</font></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=20 valign=bottom style='height:15.0pt'>
-  <td height=20 class=xl664119 style='height:15.0pt'></td>
-  <td class=xl664119><font face="Verdana">*</font></td>
-  <td class=xl764119 colspan=3><font face="Verdana"><b>Volume Min</b></font></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl684119 align=center><font face="Verdana">:</font></td>
-  <td class=xl664119></td>
-  <td class=xl764119 colspan=2><font face="Verdana"><b>5KL / 8KL / 10KL /
-  16KL<span style='mso-spacerun:yes'> </span></b></font></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 style='height:11.25pt'></td>
-  <td class=xl664119><font face="Verdana">*</font></td>
-  <td class=xl664119 colspan=5><font face="Verdana">Harga per liter </font><font
-  class="font54119" face="Verdana"><i>( dalam rupiah )</i></font></td>
-  <td class=xl684119 align=center><font face="Verdana">:</font></td>
-  <td class=xl664119></td>
-  <td class=xl674119></td>
-  <td class=xl674119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=0 valign=bottom>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl684119 align=center><font face="Verdana">-</font></td>
-  <td class=xl664119 colspan=4><font face="Verdana">Harga Dasar Solar HSD</font></td>
-  <td class=xl684119 align=center><font face="Verdana">:</font></td>
-  <td class=xl664119></td>
-  <td class=xl914119><font color="#000000"><span
-  style='mso-spacerun:yes'> </span>Rp<span style='mso-spacerun:yes'>         
-  </span><?php echo number_format($row_ppn['harga_penawaran'],2) ; ?></font></td>
-  <td class=xl674119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=0 valign=bottom style='display:none'>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl684119 align=center><font face="Verdana">-</font></td>
-  <td class=xl664119><font face="Verdana">PPN</font></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl774119 align=right><font face="Verdana" color="#000000">10%</font></td>
-  <td class=xl684119 align=center><font face="Verdana">:</font></td>
-  <td class=xl664119></td>
-  <td class=xl924119><font face="Verdana" color="#000000"><span
-  style='mso-spacerun:yes'> </span>Rp<span style='mso-spacerun:yes'>        
-  </span><span class="xl9241191"><font face="Verdana" color="#000000"><?php echo number_format($row_ppn['ppn_ppn'],2) ; ?></font></span></font></td>
-  <td class=xl674119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=0 valign=bottom style='display:none'>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl684119 align=center><font face="Verdana">-</font></td>
-  <td class=xl664119><font face="Verdana">PBBKB</font></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl784119 align=right><font face="Verdana" color="#000000">0,8585%</font></td>
-  <td class=xl684119 align=center><font face="Verdana">:</font></td>
-  <td class=xl664119></td>
-  <td class=xl924119><font face="Verdana" color="#000000"><span
-  style='mso-spacerun:yes'> </span>Rp<span style='mso-spacerun:yes'>          
-  </span><?php echo number_format($row_ppn['pbbkb'],2) ; ?></font></td>
-  <td class=xl674119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=0 valign=bottom style='display:none'>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl684119 align=center><font face="Verdana">-</font></td>
-  <td class=xl794119 colspan=3><font face="Verdana">PPh Pasal 22</font></td>
-  <td class=xl804119 align=right><font face="Verdana" color="#000000">0,30%</font></td>
-  <td class=xl814119 align=center><font face="Verdana">:</font></td>
-  <td class=xl794119><font face="Verdana" color="#000000">&nbsp;</font></td>
-  <td class=xl934119><font face="Verdana" color="#000000"><span
-  style='mso-spacerun:yes'> </span>Rp<span style='mso-spacerun:yes'>          
-  </span><?php echo number_format($row_ppn['pph'],2) ; ?></font></td>
-  <td class=xl674119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 style='height:11.25pt'></td>
-  <td class=xl664119></td>
-  <td class=xl684119 align=center><font face="Verdana">-</font></td>
-  <td class=xl824119 colspan=4><font face="Verdana"><b>Harga Solar HSD</b></font></td>
-  <td class=xl834119 align=center style='border-top:none'><font face="Verdana"><b>:</b></font></td>
-  <td class=xl824119 style='border-top:none'><font face="Verdana"
-  color="#000000"><b>&nbsp;</b></font></td>
-  <td class=xl844119 style='border-top:none'><font face="Verdana"
-  color="#000000"><b><span style='mso-spacerun:yes'> </span>Rp<span
-  style='mso-spacerun:yes'>    </span><?php echo number_format($row_ppn['harga_penawaran'],2) ; ?></b></font></td>
-  <td class=xl854119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 style='height:11.25pt'></td>
-  <td class=xl664119></td>
-  <td class=xl684119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl684119></td>
-  <td class=xl664119></td>
-  <td class=xl674119></td>
-  <td class=xl674119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl764119 colspan=4 style='height:11.25pt'><font
-  face="Verdana"><b>Syarat &amp; Ketentuan :</b></font></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl684119></td>
-  <td class=xl674119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 style='height:11.25pt'></td>
-  <td class=xl664119><font face="Verdana">*</font></td>
-  <td class=xl864119 colspan=5><font face="Verdana">Harga berlaku untuk
-  periode<span style='mso-spacerun:yes'> </span></font></td>
-  <td class=xl684119 align=center><font face="Verdana">:</font></td>
-  <td class=xl664119></td>
-  <td class=xl854119 colspan=2><span style='mso-spacerun:yes'> </span> <?php echo $periode ?> s/d <?php echo $periode2 ?> <?php echo $bln2 ?> <?php echo $thn ?><span style='mso-spacerun:yes'> </span></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 style='height:11.25pt'></td>
-  <td class=xl664119><font face="Verdana">*</font></td>
-  <td class=xl864119 colspan=10><font face="Verdana">Harga sewaktu-waktu dapat
-  berubah sesuai dengan ketentuan Pemerintah (Pertamina)</font></span></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-   <td height=15 class=xl664119 style='height:11.25pt'></td>
-   <td class=xl664119>*</td>
-   <td class=xl864119 colspan=8>Harga sudah termasuk biaya kirim</td>
-   <td class=xl674119></td>
-   <td class=xl664119></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 style='height:11.25pt'></td>
-  <td class=xl664119><font face="Verdana">*</font></td>
-  <td class=xl864119 colspan=8><font face="Verdana">Toleransi susut yang
-  berlaku adalah 0,5 %</font></td>
-  <td class=xl674119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 style='height:11.25pt'></td>
-  <td class=xl664119><font face="Verdana">*</font></td>
-  <td class=xl864119 colspan=2><font face="Verdana">Pengiriman</font></td>
-  <td class=xl684119 align=center><font face="Verdana">:</font></td>
-  <td class=xl664119 colspan=7><font face="Verdana">2 (Dua) hari kalender
-  setelah PO diterima dengan lengkap.</font></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 style='height:11.25pt'></td>
-  <td class=xl664119></td>
-  <td class=xl864119 colspan=2><font face="Verdana">Pembayaran</font></td>
-  <td class=xl684119 align=center><font face="Verdana">:</font></td>
-  <td class=xl764119 colspan=4><font face="Verdana"><b><?php echo $row_pn['pembayaran'] ; ?></b></font></td>
-  <td class=xl674119 colspan=2><span style='mso-spacerun:yes'> </span>dan
-  ditransfer ke rekening :<span style='mso-spacerun:yes'> </span></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 style='height:11.25pt'></td>
-  <td class=xl664119></td>
-  <td class=xl684119 align=center><font face="Verdana">-</font></td>
-  <td class=xl664119><font face="Verdana">Nama</font></td>
-  <td class=xl684119 align=center><font face="Verdana">:</font></td>
-  <td class=xl664119 colspan=6><font face="Verdana">PT. SINAR BACAN KHATULISTIWA</font></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 style='height:11.25pt'></td>
-  <td class=xl664119></td>
-  <td class=xl684119 align=center><font face="Verdana">-</font></td>
-  <td class=xl664119><font face="Verdana">Bank</font></td>
-  <td class=xl684119 align=center><font face="Verdana">:</font></td>
-  <td class=xl664119 colspan=5><font face="Verdana">Bank BCA Ka.Cab Tunjungan Plaza Surabaya</font></td>
-  <td class=xl674119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 style='height:11.25pt'></td>
-  <td class=xl664119></td>
-  <td class=xl684119 align=center><font face="Verdana">-</font></td>
-  <td class=xl664119><font face="Verdana">No. Rek</font></td>
-  <td class=xl684119 align=center><font face="Verdana">:</font></td>
-  <td class=xl874119 colspan=4><font face="Verdana">3633331126</font></td>
-  <td class=xl674119></td>
-  <td class=xl674119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 style='height:11.25pt'></td>
-  <td class=xl684119 align=center><font face="Verdana">*</font></td>
-  <td class=xl864119 colspan=8><font face="Verdana">Untuk informasi lebih
-  lanjut dapat menghubungi marketing kami :</font></td>
-  <td class=xl764119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=20 valign=bottom style='height:15.0pt'>
-  <td height=20 class=xl664119 style='height:15.0pt'></td>
-  <td class=xl684119></td>
-  <td class=xl864119></td>
-  <td class=xl664119></td>
-  <td class=xl664119><font face="Verdana">*</font></td>
-  <td class=xl744119 colspan=2><b><?php echo $row_user['nama_user'] ; ?></b></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl744119><b><?php echo $row_user['hp_user'] ; ?></b></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=20 valign=bottom style='height:15.0pt'>
-   <td height=20 colspan="12" class=xl664119 style='height:15.0pt'><span style='mso-spacerun:yes'><font
-  face="Verdana">Demikian surat penawaran ini kami sampaikan, besar harapan
-     kami dapat bekerja sama dan dapat</font></span></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 colspan="12" class=xl664119 style='height:11.25pt'><span style='mso-spacerun:yes'><font
-  face="Verdana">membantu memenuhi kebutuhan Bahan Bakar Solar (HSD) di
-  Perusahaan Bapak/Ibu, </font></span></td>
-  </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 colspan="10" class=xl664119 style='height:11.25pt'><font
-  face="Verdana">dan atas perhatian serta kerjasamanya kami ucapkan terima kasih.</font></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 colspan=12 style='height:11.25pt'></span></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 colspan=12 style='height:11.25pt'></span><font
-  face="Verdana">Hormat Kami,</font></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 colspan=10 style='height:11.25pt'><font
-  face="Verdana"><b>PT. Sinar Bacan Khatulistiwa</b></font></td>
-  <td class=xl904119><font face="Verdana">Branch Semarang:</font></td>
-  <td></td>
-  </tr>
- <tr height=15 style='height:11.25pt'>
-  <td height=15 class=xl664119 style='height:11.25pt'></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl674119></td>
-  <td colspan=2 valign="bottom" class=xl904119><font face="Verdana">JL. Majapahit 119 Semarang</font></td>
-  </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl664119 colspan=3 style='height:11.25pt'>&nbsp;</td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl674119></td>
-  <td class=xl904119><font face="Verdana">Telp<span style='mso-spacerun:yes'>  </span>: 024-76411158</font></td>
-  <td></td>
-  </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl764119 colspan=10 style='height:11.25pt'>&nbsp;</td>
-  <td class=xl904119><font face="Verdana">Fax<span style='mso-spacerun:yes'>   </span>: 024-76411857</font></td>
-  <td></td>
-  </tr>
- <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
-  <td height=20 style='height:15.0pt' align=left valign=top><!--[if gte vml 1]><v:shape
+          <td class=xl674119></td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 colspan="12" class=xl664119 style='height:11.25pt'>
+            <font face="Verdana"><span style='mso-spacerun:yes'>Bersama ini kami dari PT. PRATAMA LANGGENG JAYA<b>,</b></span></font>
+          </td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 colspan=12 style='height:11.25pt'>
+            <font face="Verdana">ingin mengajukan penawaran Bahan Bakar Minyak Solar, maka dengan ini
+              perkenankan kami<br>
+              menyampaikan penawaran untuk produk (solar industri)<strong> </strong>adalah sebagai
+              berikut :</font></span>
+          </td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 colspan=11 style='height:11.25pt'>
+            <font face="Verdana"></font>
+          </td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 style='height:11.25pt'></td>
+          <td class=xl664119>
+            <font face="Verdana">*</font>
+          </td>
+          <td class=xl664119 colspan=2>
+            <font face="Verdana">HSD</font>
+          </td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">:</font>
+          </td>
+          <td class=xl664119></td>
+          <td class=xl664119 colspan=2>
+            <font face="Verdana">Berat Jenis 0,82 s/d 0,85</font>
+          </td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=20 valign=bottom style='height:15.0pt'>
+          <td height=20 class=xl664119 style='height:15.0pt'></td>
+          <td class=xl664119>
+            <font face="Verdana">*</font>
+          </td>
+          <td class=xl764119 colspan=3>
+            <font face="Verdana"><b>Volume Min</b></font>
+          </td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">:</font>
+          </td>
+          <td class=xl664119></td>
+          <td class=xl764119 colspan=2>
+            <font face="Verdana"><b>5KL / 8KL / 10KL /
+                16KL<span style='mso-spacerun:yes'> </span></b></font>
+          </td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 style='height:11.25pt'></td>
+          <td class=xl664119>
+            <font face="Verdana">*</font>
+          </td>
+          <td class=xl664119 colspan=5>
+            <font face="Verdana">Harga per liter </font>
+            <font class="font54119" face="Verdana"><i>( dalam rupiah )</i></font>
+          </td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">:</font>
+          </td>
+          <td class=xl664119></td>
+          <td class=xl674119></td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=0 valign=bottom>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">-</font>
+          </td>
+          <td class=xl664119 colspan=4>
+            <font face="Verdana">Harga Dasar Solar HSD</font>
+          </td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">:</font>
+          </td>
+          <td class=xl664119></td>
+          <td class=xl914119>
+            <font color="#000000"><span style='mso-spacerun:yes'> </span>Rp<span style='mso-spacerun:yes'>         
+              </span><?php echo number_format($row_ppn['harga_penawaran'], 2); ?></font>
+          </td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=0 valign=bottom style='display:none'>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">-</font>
+          </td>
+          <td class=xl664119>
+            <font face="Verdana">PPN</font>
+          </td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl774119 align=right>
+            <font face="Verdana" color="#000000">10%</font>
+          </td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">:</font>
+          </td>
+          <td class=xl664119></td>
+          <td class=xl924119>
+            <font face="Verdana" color="#000000"><span style='mso-spacerun:yes'> </span>Rp<span style='mso-spacerun:yes'>        
+              </span><span class="xl9241191">
+                <font face="Verdana" color="#000000"><?php echo number_format($row_ppn['ppn_ppn'], 2); ?></font>
+              </span></font>
+          </td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=0 valign=bottom style='display:none'>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">-</font>
+          </td>
+          <td class=xl664119>
+            <font face="Verdana">PBBKB</font>
+          </td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl784119 align=right>
+            <font face="Verdana" color="#000000">0,8585%</font>
+          </td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">:</font>
+          </td>
+          <td class=xl664119></td>
+          <td class=xl924119>
+            <font face="Verdana" color="#000000"><span style='mso-spacerun:yes'> </span>Rp<span style='mso-spacerun:yes'>          
+              </span><?php echo number_format($row_ppn['pbbkb'], 2); ?></font>
+          </td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=0 valign=bottom style='display:none'>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">-</font>
+          </td>
+          <td class=xl794119 colspan=3>
+            <font face="Verdana">PPh Pasal 22</font>
+          </td>
+          <td class=xl804119 align=right>
+            <font face="Verdana" color="#000000">0,30%</font>
+          </td>
+          <td class=xl814119 align=center>
+            <font face="Verdana">:</font>
+          </td>
+          <td class=xl794119>
+            <font face="Verdana" color="#000000">&nbsp;</font>
+          </td>
+          <td class=xl934119>
+            <font face="Verdana" color="#000000"><span style='mso-spacerun:yes'> </span>Rp<span style='mso-spacerun:yes'>          
+              </span><?php echo number_format($row_ppn['pph'], 2); ?></font>
+          </td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 style='height:11.25pt'></td>
+          <td class=xl664119></td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">-</font>
+          </td>
+          <td class=xl824119 colspan=4>
+            <font face="Verdana"><b>Harga Solar HSD</b></font>
+          </td>
+          <td class=xl834119 align=center style='border-top:none'>
+            <font face="Verdana"><b>:</b></font>
+          </td>
+          <td class=xl824119 style='border-top:none'>
+            <font face="Verdana" color="#000000"><b>&nbsp;</b></font>
+          </td>
+          <td class=xl844119 style='border-top:none'>
+            <font face="Verdana" color="#000000"><b><span style='mso-spacerun:yes'> </span>Rp<span style='mso-spacerun:yes'>    </span><?php echo number_format($row_ppn['harga_penawaran'], 2); ?></b></font>
+          </td>
+          <td class=xl854119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 style='height:11.25pt'></td>
+          <td class=xl664119></td>
+          <td class=xl684119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl684119></td>
+          <td class=xl664119></td>
+          <td class=xl674119></td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl764119 colspan=4 style='height:11.25pt'>
+            <font face="Verdana"><b>Syarat &amp; Ketentuan :</b></font>
+          </td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl684119></td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 style='height:11.25pt'></td>
+          <td class=xl664119>
+            <font face="Verdana">*</font>
+          </td>
+          <td class=xl864119 colspan=5>
+            <font face="Verdana">Harga berlaku untuk
+              periode<span style='mso-spacerun:yes'> </span></font>
+          </td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">:</font>
+          </td>
+          <td class=xl664119></td>
+          <td class=xl854119 colspan=2><span style='mso-spacerun:yes'> </span> <?php echo $periode ?> s/d <?php echo $periode2 ?> <?php echo $bln2 ?> <?php echo $thn ?><span style='mso-spacerun:yes'> </span></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 style='height:11.25pt'></td>
+          <td class=xl664119>
+            <font face="Verdana">*</font>
+          </td>
+          <td class=xl864119 colspan=10>
+            <font face="Verdana">Harga sewaktu-waktu dapat
+              berubah sesuai dengan ketentuan Pemerintah (Pertamina)</font></span>
+          </td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 style='height:11.25pt'></td>
+          <td class=xl664119>*</td>
+          <td class=xl864119 colspan=8>Harga sudah termasuk biaya kirim</td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 style='height:11.25pt'></td>
+          <td class=xl664119>
+            <font face="Verdana">*</font>
+          </td>
+          <td class=xl864119 colspan=8>
+            <font face="Verdana">Toleransi susut yang
+              berlaku adalah 0,5 %</font>
+          </td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 style='height:11.25pt'></td>
+          <td class=xl664119>
+            <font face="Verdana">*</font>
+          </td>
+          <td class=xl864119 colspan=2>
+            <font face="Verdana">Pengiriman</font>
+          </td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">:</font>
+          </td>
+          <td class=xl664119 colspan=7>
+            <font face="Verdana">2 (Dua) hari kalender
+              setelah PO diterima dengan lengkap.</font>
+          </td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 style='height:11.25pt'></td>
+          <td class=xl664119></td>
+          <td class=xl864119 colspan=2>
+            <font face="Verdana">Pembayaran</font>
+          </td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">:</font>
+          </td>
+          <td class=xl764119 colspan=4>
+            <font face="Verdana"><b><?php echo $row_pn['pembayaran']; ?></b></font>
+          </td>
+          <td class=xl674119 colspan=2><span style='mso-spacerun:yes'> </span>dan
+            ditransfer ke rekening :<span style='mso-spacerun:yes'> </span></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 style='height:11.25pt'></td>
+          <td class=xl664119></td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">-</font>
+          </td>
+          <td class=xl664119>
+            <font face="Verdana">Nama</font>
+          </td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">:</font>
+          </td>
+          <td class=xl664119 colspan=6>
+            <font face="Verdana">PT. PRATAMA LANGGENG JAYA</font>
+          </td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 style='height:11.25pt'></td>
+          <td class=xl664119></td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">-</font>
+          </td>
+          <td class=xl664119>
+            <font face="Verdana">Bank</font>
+          </td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">:</font>
+          </td>
+          <td class=xl664119 colspan=5>
+            <font face="Verdana">Bank BCA Ka.Cab Tunjungan Plaza Surabaya</font>
+          </td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 style='height:11.25pt'></td>
+          <td class=xl664119></td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">-</font>
+          </td>
+          <td class=xl664119>
+            <font face="Verdana">No. Rek</font>
+          </td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">:</font>
+          </td>
+          <td class=xl874119 colspan=4>
+            <font face="Verdana">3633331126</font>
+          </td>
+          <td class=xl674119></td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 style='height:11.25pt'></td>
+          <td class=xl684119 align=center>
+            <font face="Verdana">*</font>
+          </td>
+          <td class=xl864119 colspan=8>
+            <font face="Verdana">Untuk informasi lebih
+              lanjut dapat menghubungi marketing kami :</font>
+          </td>
+          <td class=xl764119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=20 valign=bottom style='height:15.0pt'>
+          <td height=20 class=xl664119 style='height:15.0pt'></td>
+          <td class=xl684119></td>
+          <td class=xl864119></td>
+          <td class=xl664119></td>
+          <td class=xl664119>
+            <font face="Verdana">*</font>
+          </td>
+          <td class=xl744119 colspan=2><b><?php echo $row_user['nama_user']; ?></b></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl744119><b><?php echo $row_user['hp_user']; ?></b></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=20 valign=bottom style='height:15.0pt'>
+          <td height=20 colspan="12" class=xl664119 style='height:15.0pt'><span style='mso-spacerun:yes'>
+              <font face="Verdana">Demikian surat penawaran ini kami sampaikan, besar harapan
+                kami dapat bekerja sama dan dapat</font>
+            </span></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 colspan="12" class=xl664119 style='height:11.25pt'><span style='mso-spacerun:yes'>
+              <font face="Verdana">membantu memenuhi kebutuhan Bahan Bakar Solar (HSD) di
+                Perusahaan Bapak/Ibu, </font>
+            </span></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 colspan="10" class=xl664119 style='height:11.25pt'>
+            <font face="Verdana">dan atas perhatian serta kerjasamanya kami ucapkan terima kasih.</font>
+          </td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 colspan=12 style='height:11.25pt'></span></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 colspan=12 style='height:11.25pt'></span>
+            <font face="Verdana">Hormat Kami,</font>
+          </td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 colspan=10 style='height:11.25pt'>
+            <font face="Verdana"><b>PT. PRATAMA LANGGENG JAYA</b></font>
+          </td>
+          <td class=xl904119>
+            <font face="Verdana">Branch Semarang:</font>
+          </td>
+          <td></td>
+        </tr>
+        <tr height=15 style='height:11.25pt'>
+          <td height=15 class=xl664119 style='height:11.25pt'></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl674119></td>
+          <td colspan=2 valign="bottom" class=xl904119>
+            <font face="Verdana">JL. Majapahit 119 Semarang</font>
+          </td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl664119 colspan=3 style='height:11.25pt'>&nbsp;</td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl674119></td>
+          <td class=xl904119>
+            <font face="Verdana">Telp<span style='mso-spacerun:yes'>  </span>: 024-76411158</font>
+          </td>
+          <td></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl764119 colspan=10 style='height:11.25pt'>&nbsp;</td>
+          <td class=xl904119>
+            <font face="Verdana">Fax<span style='mso-spacerun:yes'>   </span>: 024-76411857</font>
+          </td>
+          <td></td>
+        </tr>
+        <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
+          <td height=20 style='height:15.0pt' align=left valign=top>
+            <!--[if gte vml 1]><v:shape
    id="Picture_x0020_4" o:spid="_x0000_s56983" type="#_x0000_t75" style='position:absolute;
    margin-left:3pt;margin-top:2.25pt;width:90.75pt;height:65.25pt;z-index:4;
    visibility:visible' o:gfxdata="UEsDBBQABgAIAAAAIQD2GxjBDgEAABoCAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRy07DMBBF
@@ -7804,86 +7995,96 @@ BQYAAAAABgAGAIQBAACNCgUAAAA=
     <x:CF>Bitmap</x:CF>
     <x:AutoPict/>
    </x:ClientData>
-  </v:shape><![endif]--><![if !vml]><span style='mso-ignore: vglayout; position: absolute; z-index: 4; margin-left: 4px; margin-top: 3px; width: 172px; height: 153px; top: 825px; left: 83px;'><img width=180 height=159
-  src="penawaran_files/ttd_smg.png"
-  v:shapes="Picture_x0020_4"></span><![endif]><span style='mso-ignore:vglayout2'>
-  <table cellpadding=0 cellspacing=0>
-   <tr>
-    <td height=20 class=xl664119 width=60 style='height:15.0pt;width:45pt'></td>
-   </tr>
-  </table>
-  </span></td>
+  </v:shape><![endif]-->
+            <![if !vml]><span style='mso-ignore: vglayout; position: absolute; z-index: 4; margin-left: 4px; margin-top: 3px; width: 172px; height: 153px; top: 825px; left: 83px;'><img width=180 height=159 src="penawaran_files/ttd_smg.png" v:shapes="Picture_x0020_4"></span>
+            <![endif]><span style='mso-ignore:vglayout2'>
+              <table cellpadding=0 cellspacing=0>
+                <tr>
+                  <td height=20 class=xl664119 width=60 style='height:15.0pt;width:45pt'></td>
+                </tr>
+              </table>
+            </span>
+          </td>
 
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl674119></td>
-  <td colspan=2 class=xl904119><font face="Verdana">Email :
-    jawatengah@sbk-hsd.com</font></td>
-  </tr>
- <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
-  <td height=20 colspan="4" class=xl664119 style='height:15.0pt'></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl674119></td>
-  <td colspan="2" class=xl904119><span class="xl9041191">Web  : www.sbk-hsd.com</span></td>
-  </tr>
- <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
-  <td height=20 colspan="4" class=xl664119 style='height:15.0pt'><div align="center"></div></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl674119></td>
-  <td class=xl904119>&nbsp;</td>
-  <td></td>
-  </tr>
- <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
-  <td height=20 colspan="4" class=xl664119 style='height:15.0pt'><div align="center"></div></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl674119></td>
-  <td colspan=2 class=xl904119>&nbsp;</td>
-  </tr>
- <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
-  <td height=20 class=xl664119 style='height:15.0pt'></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl674119></td>
-  <td class=xl674119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=15 valign=bottom style='height:11.25pt'>
-  <td height=15 class=xl894119 colspan=4 style='height:11.25pt'><div align="center"></div></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl674119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
- </tr>
- <tr height=22 valign=bottom style='mso-height-source:userset;height:16.5pt'>
-  <td height=22 colspan="4" align=left valign=top style='height:16.5pt'><!--[if gte vml 1]><v:shape
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl674119></td>
+          <td colspan=2 class=xl904119>
+            <font face="Verdana">Email :
+              jawatengah@plrhsd.id</font>
+          </td>
+        </tr>
+        <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
+          <td height=20 colspan="4" class=xl664119 style='height:15.0pt'></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl674119></td>
+          <td colspan="2" class=xl904119><span class="xl9041191">Web : www.plrhsd.id</span></td>
+        </tr>
+        <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
+          <td height=20 colspan="4" class=xl664119 style='height:15.0pt'>
+            <div align="center"></div>
+          </td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl674119></td>
+          <td class=xl904119>&nbsp;</td>
+          <td></td>
+        </tr>
+        <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
+          <td height=20 colspan="4" class=xl664119 style='height:15.0pt'>
+            <div align="center"></div>
+          </td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl674119></td>
+          <td colspan=2 class=xl904119>&nbsp;</td>
+        </tr>
+        <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
+          <td height=20 class=xl664119 style='height:15.0pt'></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl674119></td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=15 valign=bottom style='height:11.25pt'>
+          <td height=15 class=xl894119 colspan=4 style='height:11.25pt'>
+            <div align="center"></div>
+          </td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl674119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=22 valign=bottom style='mso-height-source:userset;height:16.5pt'>
+          <td height=22 colspan="4" align=left valign=top style='height:16.5pt'>
+            <!--[if gte vml 1]><v:shape
    id="Picture_x0020_3" o:spid="_x0000_s56982" type="#_x0000_t75" style='position:absolute;
    margin-left:7.5pt;margin-top:3.75pt;width:62.25pt;height:26.25pt;z-index:3;
    visibility:visible' o:gfxdata="UEsDBBQABgAIAAAAIQBamK3CDAEAABgCAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRwU7DMAyG
@@ -8053,60 +8254,62 @@ BgAAAAAGAAYAhAEAAG4hAAAAAA==
     <x:CF>Bitmap</x:CF>
     <x:AutoPict/>
    </x:ClientData>
-  </v:shape><![endif]--><![if !vml]><![endif]>
-    <div align="center"><font
-  face="Verdana"><b><u> ABDULLAH XQ</u></b></font></div></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl664119></td>
-  <td class=xl674119></td>
-  <td class=xl904119>&nbsp;</td>
-  <td class=xl664119></td>
- </tr>
- <tr height=22 valign=bottom style='mso-height-source:userset;height:16.5pt'>
-   <td height=22 class=xl664119 style='height:16.5pt'></td>
-   <td class=xl664119></td>
-   <td class=xl664119></td>
-   <td class=xl664119></td>
-   <td class=xl664119></td>
-   <td class=xl664119></td>
-   <td class=xl664119></td>
-   <td class=xl664119></td>
-   <td class=xl664119></td>
-   <td class=xl674119></td>
-   <td class=xl904119 colspan=2>&nbsp;</td>
- </tr>
- <![if supportMisalignedColumns]>
- <tr height=0 style='display:none'>
-  <td width=60 style='width:45pt'></td>
-  <td width=15 style='width:11pt'></td>
-  <td width=17 style='width:13pt'></td>
-  <td width=64 style='width:48pt'></td>
-  <td width=15 style='width:11pt'></td>
-  <td width=18 style='width:14pt'></td>
-  <td width=84 style='width:63pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=13 style='width:10pt'></td>
-  <td width=110 style='width:83pt'></td>
-  <td width=131 style='width:98pt'></td>
-  <td width=64 style='width:48pt'></td>
- </tr>
- <![endif]>
-</table>
+  </v:shape><![endif]-->
+            <![if !vml]>
+            <![endif]>
+            <div align="center">
+              <font face="Verdana"><b><u> ABDULLAH XQ</u></b></font>
+            </div>
+          </td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl674119></td>
+          <td class=xl904119>&nbsp;</td>
+          <td class=xl664119></td>
+        </tr>
+        <tr height=22 valign=bottom style='mso-height-source:userset;height:16.5pt'>
+          <td height=22 class=xl664119 style='height:16.5pt'></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl664119></td>
+          <td class=xl674119></td>
+          <td class=xl904119 colspan=2>&nbsp;</td>
+        </tr>
+        <![if supportMisalignedColumns]>
+        <tr height=0 style='display:none'>
+          <td width=60 style='width:45pt'></td>
+          <td width=15 style='width:11pt'></td>
+          <td width=17 style='width:13pt'></td>
+          <td width=64 style='width:48pt'></td>
+          <td width=15 style='width:11pt'></td>
+          <td width=18 style='width:14pt'></td>
+          <td width=84 style='width:63pt'></td>
+          <td width=14 style='width:11pt'></td>
+          <td width=13 style='width:10pt'></td>
+          <td width=110 style='width:83pt'></td>
+          <td width=131 style='width:98pt'></td>
+          <td width=64 style='width:48pt'></td>
+        </tr>
+        <![endif]>
+      </table>
 
-</div>
+  </div>
 <?php
-}
+    }
 ?>
-<![if !vml]><span style='mso-ignore: vglayout; position: absolute; z-index: 1; margin-left: 3px; margin-top: 5px; width: 637px; height: 107px; left: 3px; top: 1022px;'><img width=787 height=87
-  src="penawaran_files/semarang2.jpg"
-  v:shapes="Picture_x0020_1 Picture_x0020_2"></span><![endif]><span
-  style='mso-ignore:vglayout2'>
-<!----------------------------->
-<!--END OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD-->
-<!----------------------------->
+<![if !vml]><span style='mso-ignore: vglayout; position: absolute; z-index: 1; margin-left: 3px; margin-top: 5px; width: 637px; height: 107px; left: 3px; top: 1022px;'><img width=787 height=87 src="penawaran_files/semarang2.jpg" v:shapes="Picture_x0020_1 Picture_x0020_2"></span>
+<![endif]><span style='mso-ignore:vglayout2'>
+  <!----------------------------->
+  <!--END OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD-->
+  <!----------------------------->
 </body>
 
 </html>

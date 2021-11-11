@@ -151,7 +151,7 @@ error_reporting(0);
 		<div class="container">
 
 			<div class="copy text-center">
-				Copyright 2018 PT <a href='#'>Sinar Bacan Khatulistiwa</a>
+				Copyright 2018 PT <a href='#'>PRATAMA LANGGENG JAYA</a>
 			</div>
 
 		</div>

@@ -1540,7 +1540,7 @@ elseif($area == 'all')
 }
 ?>
   <td class=xl704119 align=right><font face="Verdana"><?php echo $areak ?>,<span
-  style='mso-spacerun:yes'> </span></font></td>
+  style='mso-spacerun:yes'>ï¿½</span></font></td>
   <td class=xl714119><font face="Verdana" color="#000000"><?php echo $tgl ?> <?php echo $bln2 ?> <?php echo $thn ?></font></td>
   <td class=xl664119></td>
  </tr>
@@ -1567,7 +1567,7 @@ elseif($area == 'all')
  </tr>
  <tr height=17 valign=bottom style='height:12.75pt'>
   <td height=17 class=xl734119 style='height:12.75pt'><font face="Verdana">Kepada<span
-  style='mso-spacerun:yes'> </span></font></td>
+  style='mso-spacerun:yes'>ï¿½</span></font></td>
   <td class=xl684119 align=center><font face="Verdana">:</font></td>
   <td class=xl664119></td>
   <td class=xl664119></td>
@@ -1729,7 +1729,7 @@ elseif($area == 'all')
   <td class=xl684119 align=center><font face="Verdana">:</font></td>
   <td class=xl664119></td>
   <td class=xl764119 colspan=2><font face="Verdana"><b>5KL / 8KL / 10KL /
-  16KL<span style='mso-spacerun:yes'> </span></b></font></td>
+  16KL<span style='mso-spacerun:yes'>ï¿½</span></b></font></td>
   <td class=xl664119></td>
  </tr>
  <tr height=15 valign=bottom style='height:11.25pt'>
@@ -1751,7 +1751,7 @@ elseif($area == 'all')
   <td class=xl684119 align=center><font face="Verdana">:</font></td>
   <td class=xl664119></td>
   <td class=xl914119><font color="#000000"><span
-  style='mso-spacerun:yes'> </span>Rp<span style='mso-spacerun:yes'>         
+  style='mso-spacerun:yes'>ï¿½</span>Rp<span style='mso-spacerun:yes'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   </span><?php echo number_format($row_ppn['harga_dasar_ppn'],2) ; ?></font></td>
   <td class=xl674119></td>
   <td class=xl664119></td>
@@ -1767,7 +1767,7 @@ elseif($area == 'all')
   <td class=xl684119 align=center><font face="Verdana">:</font></td>
   <td class=xl664119></td>
   <td class=xl924119><font face="Verdana" color="#000000"><span
-  style='mso-spacerun:yes'> </span>Rp<span style='mso-spacerun:yes'>        
+  style='mso-spacerun:yes'>ï¿½</span>Rp<span style='mso-spacerun:yes'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   </span><span class="xl9241191"><font face="Verdana" color="#000000"><?php echo number_format($row_ppn['ppn_ppn'],2) ; ?></font></span></font></td>
   <td class=xl674119></td>
   <td class=xl664119></td>
@@ -1783,7 +1783,7 @@ elseif($area == 'all')
   <td class=xl684119 align=center><font face="Verdana">:</font></td>
   <td class=xl664119></td>
   <td class=xl924119><font face="Verdana" color="#000000"><span
-  style='mso-spacerun:yes'> </span>Rp<span style='mso-spacerun:yes'>          
+  style='mso-spacerun:yes'>ï¿½</span>Rp<span style='mso-spacerun:yes'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   </span><?php echo number_format($row_ppn['pbbkb'],2) ; ?></font></td>
   <td class=xl674119></td>
   <td class=xl664119></td>
@@ -1797,7 +1797,7 @@ elseif($area == 'all')
   <td class=xl814119 align=center><font face="Verdana">:</font></td>
   <td class=xl794119><font face="Verdana" color="#000000">&nbsp;</font></td>
   <td class=xl934119><font face="Verdana" color="#000000"><span
-  style='mso-spacerun:yes'> </span>Rp<span style='mso-spacerun:yes'>          
+  style='mso-spacerun:yes'>ï¿½</span>Rp<span style='mso-spacerun:yes'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   </span><?php echo number_format($row_ppn['pph'],2) ; ?></font></td>
   <td class=xl674119></td>
   <td class=xl664119></td>
@@ -1811,8 +1811,8 @@ elseif($area == 'all')
   <td class=xl824119 style='border-top:none'><font face="Verdana"
   color="#000000"><b>&nbsp;</b></font></td>
   <td class=xl844119 style='border-top:none'><font face="Verdana"
-  color="#000000"><b><span style='mso-spacerun:yes'> </span>Rp<span
-  style='mso-spacerun:yes'>    </span><?php echo number_format($row_ppn['harga_penawaran'],2) ; ?></b></font></td>
+  color="#000000"><b><span style='mso-spacerun:yes'>ï¿½</span>Rp<span
+  style='mso-spacerun:yes'>ï¿½ï¿½ï¿½ </span><?php echo number_format($row_ppn['harga_penawaran'],2) ; ?></b></font></td>
   <td class=xl854119></td>
   <td class=xl664119></td>
  </tr>
@@ -1846,10 +1846,10 @@ elseif($area == 'all')
   <td height=15 class=xl664119 style='height:11.25pt'></td>
   <td class=xl664119><font face="Verdana">*</font></td>
   <td class=xl864119 colspan=5><font face="Verdana">Harga berlaku untuk
-  periode<span style='mso-spacerun:yes'> </span></font></td>
+  periode<span style='mso-spacerun:yes'>ï¿½</span></font></td>
   <td class=xl684119 align=center><font face="Verdana">:</font></td>
   <td class=xl664119></td>
-  <td class=xl854119 colspan=2><span style='mso-spacerun:yes'> </span> <?php echo $periode ?> s/d <?php echo $periode2 ?> <?php echo $bln2 ?> <?php echo $thn ?><span style='mso-spacerun:yes'> </span></td>
+  <td class=xl854119 colspan=2><span style='mso-spacerun:yes'>ï¿½</span> <?php echo $periode ?> s/d <?php echo $periode2 ?> <?php echo $bln2 ?> <?php echo $thn ?><span style='mso-spacerun:yes'>ï¿½</span></td>
   <td class=xl664119></td>
  </tr>
  <tr height=15 valign=bottom style='height:11.25pt'>
@@ -1887,8 +1887,8 @@ elseif($area == 'all')
   <td class=xl864119 colspan=2><font face="Verdana">Pembayaran</font></td>
   <!--<td class=xl684119 align=center><font face="Verdana">:</font></td>-->
   <td class=xl764119 colspan=4><font face="Verdana"><b><?php echo $row_pn['pembayaran'] ; ?></b></font></td>
-  <!--<td class=xl674119 colspan=2><span style='mso-spacerun:yes'> </span>-->dan
-  ditransfer ke rekening :<span style='mso-spacerun:yes'> </span></td>
+  <!--<td class=xl674119 colspan=2><span style='mso-spacerun:yes'>ï¿½</span>-->dan
+  ditransfer ke rekening :<span style='mso-spacerun:yes'>ï¿½</span></td>
   <td class=xl664119></td>
  </tr>
  <tr height=15 valign=bottom style='height:11.25pt'>
@@ -1993,12 +1993,12 @@ elseif($area == 'all')
   <td class=xl664119></td>
   <td class=xl664119></td>
   <td class=xl674119></td>
-  <td class=xl904119><font face="Verdana">Telp<span style='mso-spacerun:yes'>  </span>: 024-76417058</font></td>
+  <td class=xl904119><font face="Verdana">Telp<span style='mso-spacerun:yes'>ï¿½ </span>: 024-76417058</font></td>
   <td></td>
   </tr>
  <tr height=15 valign=bottom style='height:11.25pt'>
   <td height=15 class=xl764119 colspan=10 style='height:11.25pt'>&nbsp;</td>
-  <td class=xl904119><font face="Verdana">Fax<span style='mso-spacerun:yes'>   </span>: 024-76417058</font></td>
+  <td class=xl904119><font face="Verdana">Fax<span style='mso-spacerun:yes'>ï¿½ï¿½ </span>: 024-76417058</font></td>
   <td></td>
   </tr>
  <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
@@ -7837,7 +7837,7 @@ BQYAAAAABgAGAIQBAACNCgUAAAA=
   <td class=xl664119></td>
   <td class=xl674119></td>
   <td colspan=2 class=xl904119><font face="Verdana">Email :
-    pratamajateng@plr-hsd.com</font></td>
+    pratamajateng@plrhsd.id</font></td>
   </tr>
  <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
   <td height=20 colspan="4" class=xl664119 style='height:15.0pt'></td>
@@ -7847,7 +7847,7 @@ BQYAAAAABgAGAIQBAACNCgUAAAA=
   <td class=xl664119></td>
   <td class=xl664119></td>
   <td class=xl674119></td>
-  <td colspan="2" class=xl904119><span class="xl9041191">Web  : www.plr-hsd.com</span></td>
+  <td colspan="2" class=xl904119><span class="xl9041191">Web  : www.plrhsd.id</span></td>
   </tr>
  <tr height=20 valign=bottom style='mso-height-source:userset;height:15.0pt'>
    <td height=20 colspan="4" class=xl664119 style='height:15.0pt'>&nbsp;</td>

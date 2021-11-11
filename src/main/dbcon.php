@@ -2,10 +2,10 @@
 //core
 function dbcon()
 {
-	$user = "root";
-	$pass = "";
+	$user = "plrc7162_root";
+	$pass = "semangatpagiPLR";
 	$host = "localhost";
-	$db   = "sales";
+	$db   = "plrc7162_sales";
 	mysql_connect($host, $user, $pass);
 	mysql_select_db($db);
 }
