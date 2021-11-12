@@ -2,8 +2,8 @@
 include('dbcon.php');
 dbcon();
 
-//$query = "select * from tb_kontak_all ";
-//$result = mysql_query($query) or die(mysql_error());
+$query = "select * from tb_kontak_all ";
+$result = mysql_query($query) or die(mysql_error());
 $no = 1;
 
 ?>
@@ -3148,7 +3148,7 @@ AAAAAAAAAACwBgAAZHJzL21lZGlhL2ltYWdlMS5wbmdQSwUGAAAAAAYABgCEAQAA/qYBAAAA
             <font face="Arial"><b>:</b></font>
           </td>
           <td colspan=5 class=xl8330583 valign=top>
-            <font face="Arial"><b>0144-777-677</b></font>
+            <font face="Arial"><b>363 - 6260626</b></font>
           </td>
           <td class=xl7330583></td>
         </tr>
@@ -3159,30 +3159,13 @@ AAAAAAAAAACwBgAAZHJzL21lZGlhL2ltYWdlMS5wbmdQSwUGAAAAAAYABgCEAQAA/qYBAAAA
             <font face="Arial">-</font>
           </td>
           <td class=xl7730583>
-            <font face="Arial"><b>Bank MANDIRI</b></font>
+            <font face="Arial"><b>Bank Mandiri</b></font>
           </td>
           <td class=xl8230583 align=center>
             <font face="Arial"><b>:</b></font>
           </td>
           <td colspan=5 class=xl8430583 valign=top>
-            <font face="Arial"><b>142-007-6000-677</b></font>
-          </td>
-          <td class=xl7330583></td>
-        </tr>
-        <tr height=17 valign=bottom style='height:12.75pt'>
-          <td height=17 class=xl6430583 style='height:12.75pt'></td>
-          <td class=xl6430583></td>
-          <td class=xl6630583 align=center>
-            <font face="Arial">-</font>
-          </td>
-          <td class=xl7730583>
-            <font face="Arial"><b>Bank BRI</b></font>
-          </td>
-          <td class=xl8230583 align=center>
-            <font face="Arial"><b>:</b></font>
-          </td>
-          <td colspan=5 class=xl8430583 valign=top>
-            <font face="Arial"><b>1560-100068-4309</b></font>
+            <font face="Arial"><b>142 - 00 - 1555 - 1269</b></font>
           </td>
           <td class=xl7330583></td>
         </tr>
@@ -6469,13 +6452,13 @@ cGVnUEsFBgAAAAAGAAYAhQEAAMJNAAAAAA==
             $area = $row_user['kota'];
 
             if ($area == 'surabaya') {
-              $name = 'ABDULLAH KALIKY';
+              $name = 'HANDOKO ARIEF';
             } elseif ($area == 'SURABAYA') {
-              $name = 'ABDULLAH KALIKY';
+              $name = 'HANDOKO ARIEF';
             } elseif ($area == 'probolinggo') {
-              $name = 'ABDULLAH KALIKY';
+              $name = 'HANDOKO ARIEF';
             } elseif ($area == 'PROBOLINGGO') {
-              $name = 'ABDULLAH KALIKY';
+              $name = 'HANDOKO ARIEF';
             } elseif ($area == 'semarang') {
               $name = 'ISKANDAR';
             } elseif ($area == 'SEMARANG') {
