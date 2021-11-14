@@ -37,11 +37,7 @@
            <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
                <thead>
                    <tr>
-                       <th><span> - </span>
-                           <div>
-                               <input type="checkbox" id="check_all" data-to-table="tasks"><label></label>
-                           </div>
-                       </th>
+                       <th data-orderable="false" class="center no-sort"><input type="checkbox" id="chkAll" class="flat" /></th>
                        <th>Tanggal Bagi</th>
                        <th>Kode</th>
                        <th>Nama Perusahaan</th>
@@ -102,7 +98,7 @@
                     ?>
                        <tr>
                            <td class="a-center ">
-                               <input type="checkbox" class="flat" name="id_kon[]" value="<?php echo $row['id_kontak']; ?>">
+                               <input id="check" type="checkbox" class="flat" name="id_kon[]" value="<?php echo $row['id_kontak']; ?>">
                            </td>
                            <td><?php echo $row['TANGGAL']; ?></td>
                            <td><?php echo $row['kode_kontak']; ?></td>
@@ -189,7 +185,7 @@
 
 
 
-                   </div>e
+                   </div>
                    <div class="modal-footer">
                        <input name="submit" value="Filter" class="btn btn-success" type="submit" />
 
@@ -201,23 +197,36 @@
            </div>
        </div>
 
+       <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+       <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+       <script type="text/javascript" src="vendors/datatables/js/jquery.dataTables.min.js"></script>
+       <script type="text/javascript" src="vendors/datatables/dataTables.bootstrap.js"></script>
+
        <script type="text/javascript">
-           alert('Messagesd');
-           $('#example').dataTable({
-               "columnDefs": [{
-                   "targets": [0],
-                   "orderable": false,
-               }]
-           });
+           //Udah Done Hanya saja Tidak dapat all Pagging dan masih bisa di Sort
+           $(function() {
+               var oTable = $('#example').dataTable({
+                   retrieve: true,
+                   paging: true,
+                   searching: true,
+                   stateSave: true,
+                   aoColumnDefs: [{
+                       bSortable: false,
+                       aTargets: [0]
+                   }]
+               });
 
-           $('body').on('change', '#check_all', function() {
-               alert('Messagesd');
+               $(document).ready(function() {
+                   var allPages = oTable.fnGetNodes();
 
-               var stud_row, checked;
-               stud_row = $('#example').find('tbody tr');
-               checked = $(this).prop('checked');
-               $.each(stud_row, function() {
-                   var checkbox = $($(this).find('td').eq(0)).find('input').prop('checked', checked);
+                   $('body').on('click', '#chkAll', function() {
+                       if ($(this).hasClass('allChecked')) {
+                           $('input[type="checkbox"]', allPages).prop('checked', false);
+                       } else {
+                           $('input[type="checkbox"]', allPages).prop('checked', true);
+                       }
+                       $(this).toggleClass('allChecked');
+                   })
                });
            });
        </script>

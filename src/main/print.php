@@ -6469,13 +6469,13 @@ cGVnUEsFBgAAAAAGAAYAhQEAAMJNAAAAAA==
             $area = $row_user['kota'];
 
             if ($area == 'surabaya') {
-              $name = 'ABDULLAH KALIKY';
+              $name = 'Andi Dyan Pratama P';
             } elseif ($area == 'SURABAYA') {
-              $name = 'ABDULLAH KALIKY';
+              $name = 'Andi Dyan Pratama P';
             } elseif ($area == 'probolinggo') {
-              $name = 'ABDULLAH KALIKY';
+              $name = 'Andi Dyan Pratama P';
             } elseif ($area == 'PROBOLINGGO') {
-              $name = 'ABDULLAH KALIKY';
+              $name = 'Andi Dyan Pratama P';
             } elseif ($area == 'semarang') {
               $name = 'ISKANDAR';
             } elseif ($area == 'SEMARANG') {
