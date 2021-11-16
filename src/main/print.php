@@ -3206,7 +3206,7 @@ AAAAAAAAAACwBgAAZHJzL21lZGlhL2ltYWdlMS5wbmdQSwUGAAAAAAYABgCEAQAA/qYBAAAA
             <font face="Arial">*</font>
           </td>
           <td class=xl7730583 colspan=2><span class="style1">
-              <font face="Arial"><?php echo $row_user['nama_user']; ?></font>
+              <font face="Arial"><?php echo substr($row_user['nama_user'], 0, 13); ?></font>
             </span></td>
           <td class=xl6430583>
             <font face="Arial">:</font>
@@ -6477,13 +6477,13 @@ cGVnUEsFBgAAAAAGAAYAhQEAAMJNAAAAAA==
             } elseif ($area == 'PROBOLINGGO') {
               $name = 'Andi Dyan Pratama P';
             } elseif ($area == 'semarang') {
-              $name = 'ISKANDAR';
+              $name = 'Tegas Rajib Aziz';
             } elseif ($area == 'SEMARANG') {
-              $name = 'ISKANDAR';
+              $name = 'Tegas Rajib Aziz';
             } elseif ($area == 'juwana') {
-              $name = 'ISKANDAR';
+              $name = 'Tegas Rajib Aziz';
             } elseif ($area == 'JUWANA') {
-              $name = 'ISKANDAR';
+              $name = 'Tegas Rajib Aziz';
             } elseif ($area == 'cirebon') {
               $name = 'Rubbi Anto';
             } elseif ($area == 'CIREBON') {
@@ -11789,17 +11789,17 @@ AAAGAAYAhAEAAGiPBAAAAA==
               } elseif ($area == 'SURABAYA') {
                 $images = glob("penawaran_files/surabaya.jpg");
               } elseif ($area == 'probolinggo') {
-                $images = glob("penawaran_files/probolinggo.jpg");
+                $images = glob("penawaran_files/surabaya.jpg");
               } elseif ($area == 'PROBOLINGGO') {
-                $images = glob("penawaran_files/probolinggo.jpg");
+                $images = glob("penawaran_files/surabaya.jpg");
               } elseif ($area == 'semarang') {
-                $images = glob("penawaran_files/semarang2.jpg");
+                $images = glob("penawaran_files/semarang3.jpeg");
               } elseif ($area == 'SEMARANG') {
-                $images = glob("penawaran_files/semarang2.jpg");
+                $images = glob("penawaran_files/semarang3.jpeg");
               } elseif ($area == 'juwana') {
-                $images = glob("penawaran_files/juwana.jpg");
+                $images = glob("penawaran_files/juwana.jpeg");
               } elseif ($area == 'JUWANA') {
-                $images = glob("penawaran_files/juwana.jpg");
+                $images = glob("penawaran_files/juwana.jpeg");
               } elseif ($area == 'cirebon') {
                 $images = glob("penawaran_files/cirebon.jpg");
               } elseif ($area == 'CIREBON') {
