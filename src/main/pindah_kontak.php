@@ -23,7 +23,7 @@
                <?php
                 $ca_user = mysql_query("select * from tb_user where kota = '" . $admin_area . "' AND level_user IN ('marketing', 'broker')") or die(mysql_error());
                 while ($cari_user = mysql_fetch_array($ca_user)) {
-                ?>
+                    ?>
                    <option value="<?php echo $cari_user['id_user']; ?>"><?php echo $cari_user['nama_user']; ?></option>
                <?php
                 }
@@ -95,7 +95,7 @@
 
                         $user_query = mysql_query($queryu) or die(mysql_error());
                         $row_user = mysql_fetch_array($user_query);
-                    ?>
+                        ?>
                        <tr>
                            <td class="a-center ">
                                <input id="check" type="checkbox" class="flat" name="id_kon[]" value="<?php echo $row['id_kontak']; ?>">
@@ -108,15 +108,15 @@
                            <td><?php echo $row['provinsi_kontak']; ?></td>
 
                            <td><?php
-                                if ($row['status_kontak'] == 'telah dihubungi') {
-                                    echo '<div class="label label-success"><i class="icon-check"></i><strong>' . $row['status_kontak'] . '</strong></div>';
-                                } else if ($row['status_kontak'] == 'belum dihubungi') {
-                                    echo '<div class="label label-danger"><i class="icon-ok"></i><strong>' . $row['status_kontak'] . '</strong></div>';
-                                } else {
-                                    echo '<div class="success"><i class="icon-remove-sign"></i><strong>' . $row['status_kontak'] . '</strong></div>';
-                                };
+                                    if ($row['status_kontak'] == 'telah dihubungi') {
+                                        echo '<div class="label label-success"><i class="icon-check"></i><strong>' . $row['status_kontak'] . '</strong></div>';
+                                    } else if ($row['status_kontak'] == 'belum dihubungi') {
+                                        echo '<div class="label label-danger"><i class="icon-ok"></i><strong>' . $row['status_kontak'] . '</strong></div>';
+                                    } else {
+                                        echo '<div class="success"><i class="icon-remove-sign"></i><strong>' . $row['status_kontak'] . '</strong></div>';
+                                    };
 
-                                ?>
+                                    ?>
                            </td>
                            <td><?php echo $row_user['nama_user']; ?></td>
                            <td><?php echo $row['report_kontak']; ?> || <?php echo $row['ket_kontak']; ?></td>
@@ -135,7 +135,7 @@
                 while ($cr_user = mysql_fetch_array($cb_user)) {
 
 
-                ?>
+                    ?>
                    <option value="<?php echo $cr_user['id_user']; ?>"><?php echo $cr_user['nama_user']; ?></option>
 
                <?php
