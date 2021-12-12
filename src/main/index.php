@@ -8,7 +8,7 @@ error_reporting(0);
 <html>
 
 <head>
-	<title>SISTEM MARKETING PT PRATAMA LANGGENG JAYA</title>
+	<title>SISTEM MARKETING PT PRATAMA LANGGENG RAYA</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
@@ -24,7 +24,7 @@ error_reporting(0);
 				<div class="col-md-10">
 					<!-- Logo -->
 					<div class="logo">
-						<h1><a href="index.html">PT PRATAMA LANGGENG JAYA</a></h1>
+						<h1><a href="index.html">PT PRATAMA LANGGENG RAYA</a></h1>
 					</div>
 				</div>
 
@@ -151,7 +151,7 @@ error_reporting(0);
 		<div class="container">
 
 			<div class="copy text-center">
-				Copyright 2018 PT <a href='#'>PRATAMA LANGGENG JAYA</a>
+				Copyright 2018 PT <a href='#'>PRATAMA LANGGENG RAYA</a>
 			</div>
 
 		</div>

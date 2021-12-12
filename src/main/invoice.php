@@ -39615,7 +39615,7 @@ AQAA6asdAAAA
  </tr>
  <tr height=20 valign=bottom style='height:15.0pt'>
   <td height=20 class=xl15416542 colspan=4  valign=middle
-  style='height:15.0pt'><font face="HP Simplified"><b>an : PT PRATAMA LANGGENG JAYA</b></font></td>
+  style='height:15.0pt'><font face="HP Simplified"><b>an : PT PRATAMA LANGGENG RAYA</b></font></td>
   <td class=xl15716542 ><font face="HP Simplified">&nbsp;</font></td>
   <td class=xl9316542 ><font face="HP Simplified">&nbsp;</font></td>
   <td class=xl9316542 ><font face="HP Simplified">&nbsp;</font></td>

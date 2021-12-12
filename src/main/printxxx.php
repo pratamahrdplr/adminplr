@@ -654,7 +654,7 @@ tags will be replaced.-->
          $query1 = mysql_query("update tb_penawaran set no_penawaran = '0$row_pn[id_penawaran]/PLR-HSD-$areax/$bln/$thn' where id_penawaran = '$_GET[id_penawaran]'") or die(mysql_error());
 
 
-      ?>
+         ?>
          <table border=0 cellpadding=0 cellspacing=0 width=667 class=xl6430583 style='border-collapse:collapse;table-layout:fixed;width:503pt'>
             <col class=xl6430583 width=65 style='mso-width-source:userset;mso-width-alt:
  2377;width:49pt'>
@@ -3043,7 +3043,7 @@ AAAAAAAAAACwBgAAZHJzL21lZGlhL2ltYWdlMS5wbmdQSwUGAAAAAAYABgCEAQAA/qYBAAAA
                   <font face="Arial">:</font>
                </td>
                <td class=xl6430583 colspan=5>
-                  <font face="Arial">an. PT. PRATAMA LANGGENG JAYA</font>
+                  <font face="Arial">an. PT. PRATAMA LANGGENG RAYA</font>
                </td>
                <td class=xl7330583></td>
             </tr>
@@ -3199,7 +3199,7 @@ AAAAAAAAAACwBgAAZHJzL21lZGlhL2ltYWdlMS5wbmdQSwUGAAAAAAYABgCEAQAA/qYBAAAA
             </tr>
             <tr height=17 valign=bottom style='height:12.75pt'>
                <td height=17 class=xl7730583 colspan=6 style='height:12.75pt'>
-                  <font face="Arial"><b>PT. PRATAMA LANGGENG JAYA</b></font>
+                  <font face="Arial"><b>PT. PRATAMA LANGGENG RAYA</b></font>
                </td>
                <td class=xl6430583></td>
                <td class=xl6430583></td>
@@ -5891,40 +5891,40 @@ YWdlMS5wbmdQSwUGAAAAAAYABgCEAQAAqtkBAAAA
    </x:ClientData>
   </v:shape><![endif]-->
                   <?php
-                  $area = $row_user['kota'];
+                     $area = $row_user['kota'];
 
-                  if ($area == 'surabaya') {
-                     $imagest = glob("penawaran_files/ttd_sby.png");
-                  } elseif ($area == 'SURABAYA') {
-                     $imagest = glob("penawaran_files/ttd_sby.png");
-                  } elseif ($area == 'probolinggo') {
-                     $imagest = glob("penawaran_files/ttd_prb.png");
-                  } elseif ($area == 'PROBOLINGGO') {
-                     $imagest = glob("penawaran_files/ttd_prb.png");
-                  } elseif ($area == 'semarang') {
-                     $imagest = glob("penawaran_files/ttd_smg.png");
-                  } elseif ($area == 'SEMARANG') {
-                     $imagest = glob("penawaran_files/ttd_smg.png");
-                  } elseif ($area == 'juwana') {
-                     $imagest = glob("penawaran_files/ttd_jwn.png");
-                  } elseif ($area == 'JUWANA') {
-                     $imagest = glob("penawaran_files/ttd_jwn.png");
-                  } elseif ($area == 'cirebon') {
-                     $imagest = glob("penawaran_files/ttd_crb.png");
-                  } elseif ($area == 'CIREBON') {
-                     $imagest = glob("penawaran_files/ttd_crb.png");
-                  }
+                     if ($area == 'surabaya') {
+                        $imagest = glob("penawaran_files/ttd_sby.png");
+                     } elseif ($area == 'SURABAYA') {
+                        $imagest = glob("penawaran_files/ttd_sby.png");
+                     } elseif ($area == 'probolinggo') {
+                        $imagest = glob("penawaran_files/ttd_prb.png");
+                     } elseif ($area == 'PROBOLINGGO') {
+                        $imagest = glob("penawaran_files/ttd_prb.png");
+                     } elseif ($area == 'semarang') {
+                        $imagest = glob("penawaran_files/ttd_smg.png");
+                     } elseif ($area == 'SEMARANG') {
+                        $imagest = glob("penawaran_files/ttd_smg.png");
+                     } elseif ($area == 'juwana') {
+                        $imagest = glob("penawaran_files/ttd_jwn.png");
+                     } elseif ($area == 'JUWANA') {
+                        $imagest = glob("penawaran_files/ttd_jwn.png");
+                     } elseif ($area == 'cirebon') {
+                        $imagest = glob("penawaran_files/ttd_crb.png");
+                     } elseif ($area == 'CIREBON') {
+                        $imagest = glob("penawaran_files/ttd_crb.png");
+                     }
 
 
 
-                  for ($i = 0; $i < count($imagest); $i++) {
-                     $single_imaget = $imagest[$i];
-                  ?>
+                     for ($i = 0; $i < count($imagest); $i++) {
+                        $single_imaget = $imagest[$i];
+                        ?>
                      <![if !vml]><span style='mso-ignore:vglayout; position:absolute; z-index:2; margin-left:0px; margin-top:4px; width:103px; height:96px'><img width=99 height=96 src="<?php echo $single_imaget; ?>" alt=TTD.png v:shapes="Picture_x0020_4 Picture_x0020_5"></span>
                      <![endif]><span style='mso-ignore:vglayout2'>
                      <?php
-                  }
-                     ?>
+                        }
+                        ?>
                      <table cellpadding=0 cellspacing=0>
                         <tr>
                            <td height=17 class=xl6430583 width=65 style='height:12.75pt;width:49pt'></td>
@@ -6392,32 +6392,32 @@ cGVnUEsFBgAAAAAGAAYAhQEAAMJNAAAAAA==
             <tr height=17 valign=bottom style='height:12.75pt'>
                <td height=17 class=xl7030583 colspan=4 style='height:12.75pt'>
                   <?php
-                  $area = $row_user['kota'];
+                     $area = $row_user['kota'];
 
-                  if ($area == 'surabaya') {
-                     $name = 'MOCH. ERWAN';
-                  } elseif ($area == 'SURABAYA') {
-                     $name = 'MOCH. ERWAN';
-                  } elseif ($area == 'probolinggo') {
-                     $name = 'MOCH. ERWAN';
-                  } elseif ($area == 'PROBOLINGGO') {
-                     $name = 'MOCH. ERWAN';
-                  } elseif ($area == 'semarang') {
-                     $name = 'ABDULLAH XQ';
-                  } elseif ($area == 'SEMARANG') {
-                     $name = 'ABDULLAH XQ';
-                  } elseif ($area == 'juwana') {
-                     $name = 'ABDULLAH XQ';
-                  } elseif ($area == 'JUWANA') {
-                     $name = 'ABDULLAH XQ';
-                  } elseif ($area == 'cirebon') {
-                     $name = 'DWI SETIAWAN';
-                  } elseif ($area == 'CIREBON') {
-                     $name = 'DWI SETIAWAN';
-                  }
+                     if ($area == 'surabaya') {
+                        $name = 'MOCH. ERWAN';
+                     } elseif ($area == 'SURABAYA') {
+                        $name = 'MOCH. ERWAN';
+                     } elseif ($area == 'probolinggo') {
+                        $name = 'MOCH. ERWAN';
+                     } elseif ($area == 'PROBOLINGGO') {
+                        $name = 'MOCH. ERWAN';
+                     } elseif ($area == 'semarang') {
+                        $name = 'ABDULLAH XQ';
+                     } elseif ($area == 'SEMARANG') {
+                        $name = 'ABDULLAH XQ';
+                     } elseif ($area == 'juwana') {
+                        $name = 'ABDULLAH XQ';
+                     } elseif ($area == 'JUWANA') {
+                        $name = 'ABDULLAH XQ';
+                     } elseif ($area == 'cirebon') {
+                        $name = 'DWI SETIAWAN';
+                     } elseif ($area == 'CIREBON') {
+                        $name = 'DWI SETIAWAN';
+                     }
 
 
-                  ?>
+                     ?>
                   <font face="Arial"><b><u><?php echo $name; ?></u></b></font>
                </td>
                <td class=xl6430583></td>
@@ -11710,40 +11710,40 @@ AAAGAAYAhAEAAGiPBAAAAA==
   height:79px'>
 
                      <?php
-                     $area = $row_user['kota'];
+                        $area = $row_user['kota'];
 
-                     if ($area == 'surabaya') {
-                        $images = glob("penawaran_files/surabaya.png");
-                     } elseif ($area == 'SURABAYA') {
-                        $images = glob("penawaran_files/surabaya.png");
-                     } elseif ($area == 'probolinggo') {
-                        $images = glob("penawaran_files/probolinggo.png");
-                     } elseif ($area == 'PROBOLINGGO') {
-                        $images = glob("penawaran_files/probolinggo.png");
-                     } elseif ($area == 'semarang') {
-                        $images = glob("penawaran_files/semarang.png");
-                     } elseif ($area == 'SEMARANG') {
-                        $images = glob("penawaran_files/semarang.png");
-                     } elseif ($area == 'juwana') {
-                        $images = glob("penawaran_files/juwana.png");
-                     } elseif ($area == 'JUWANA') {
-                        $images = glob("penawaran_files/juwana.png");
-                     } elseif ($area == 'cirebon') {
-                        $images = glob("penawaran_files/cirebon.png");
-                     } elseif ($area == 'CIREBON') {
-                        $images = glob("penawaran_files/cirebon.png");
-                     }
+                        if ($area == 'surabaya') {
+                           $images = glob("penawaran_files/surabaya.png");
+                        } elseif ($area == 'SURABAYA') {
+                           $images = glob("penawaran_files/surabaya.png");
+                        } elseif ($area == 'probolinggo') {
+                           $images = glob("penawaran_files/probolinggo.png");
+                        } elseif ($area == 'PROBOLINGGO') {
+                           $images = glob("penawaran_files/probolinggo.png");
+                        } elseif ($area == 'semarang') {
+                           $images = glob("penawaran_files/semarang.png");
+                        } elseif ($area == 'SEMARANG') {
+                           $images = glob("penawaran_files/semarang.png");
+                        } elseif ($area == 'juwana') {
+                           $images = glob("penawaran_files/juwana.png");
+                        } elseif ($area == 'JUWANA') {
+                           $images = glob("penawaran_files/juwana.png");
+                        } elseif ($area == 'cirebon') {
+                           $images = glob("penawaran_files/cirebon.png");
+                        } elseif ($area == 'CIREBON') {
+                           $images = glob("penawaran_files/cirebon.png");
+                        }
 
-                     for ($i = 0; $i < count($images); $i++) {
-                        $single_image = $images[$i];
-                     ?>
+                        for ($i = 0; $i < count($images); $i++) {
+                           $single_image = $images[$i];
+                           ?>
 
 
                         <img width=666 height=79 src="<?php echo $single_image; ?>" alt="<?php echo $single_image; ?>" v:shapes="Picture_x0020_9"></span>
                   <![endif]><span style='mso-ignore:vglayout2'>
                   <?php
                      }
-                  ?>
+                     ?>
                   <table cellpadding=0 cellspacing=0>
                      <tr>
                         <td height=17 class=xl7030583 width=65 style='height:12.75pt;width:49pt'></td>
@@ -11833,7 +11833,7 @@ AAAGAAYAhAEAAGiPBAAAAA==
 
    </div>
 <?php
-      }
+}
 ?>
 
 <!----------------------------->

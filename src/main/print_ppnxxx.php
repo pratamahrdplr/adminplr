@@ -751,7 +751,7 @@ tags will be replaced.-->
       $querypen = mysql_query("update tb_penawaran set no_penawaran = '0$row_pn[id_penawaran]/PLR-HSD-$areax/$bln/$thn', ppn = '$hppn' , ppn_ppn = '$hppn_ppn' ,pbbkb = '$hpbbkb' , pph = '$hpph' , harga_dasar = '$harga_dasar' , harga_dasar_ppn = '$harga_dasar_ppn' where id_penawaran = '$_GET[id_penawaran]'") or die(mysql_error());
       $pen_query = mysql_query("select * from tb_penawaran where id_penawaran = '$_GET[id_penawaran]'") or die(mysql_error());
       $row_ppn = mysql_fetch_array($pen_query);
-    ?>
+      ?>
       <table border=0 cellpadding=0 cellspacing=0 width=605 class=xl664119 style='border-collapse:collapse ; table-layout:fixed;width:455pt'>
         <col class=xl664119 width=60 style='mso-width-source:userset;mso-width-alt:
  2194;width:45pt'>
@@ -1541,30 +1541,30 @@ AAAAAA==
           <td class=xl664119></td>
           <td class=xl694119></td>
           <?php
-          if ($area == 'surabaya') {
-            $areak = 'Surabaya';
-          } elseif ($area == 'SURABAYA') {
-            $areak = 'Surabaya';
-          } elseif ($area == 'probolinggo') {
-            $areak = 'Probolinggo';
-          } elseif ($area == 'PROBOLINGGO') {
-            $areak = 'Probolinggo';
-          } elseif ($area == 'semarang') {
-            $areak = 'Semarang';
-          } elseif ($area == 'SEMARANG') {
-            $areak = 'Semarang';
-          } elseif ($area == 'juwana') {
-            $areak = 'Juwana';
-          } elseif ($area == 'JUWANA') {
-            $areak = 'Juwana';
-          } elseif ($area == 'cirebon') {
-            $areak = 'Cirebon';
-          } elseif ($area == 'CIREBON') {
-            $areak = 'Cirebon';
-          } elseif ($area == 'all') {
-            $areak = 'Surabaya';
-          }
-          ?>
+            if ($area == 'surabaya') {
+              $areak = 'Surabaya';
+            } elseif ($area == 'SURABAYA') {
+              $areak = 'Surabaya';
+            } elseif ($area == 'probolinggo') {
+              $areak = 'Probolinggo';
+            } elseif ($area == 'PROBOLINGGO') {
+              $areak = 'Probolinggo';
+            } elseif ($area == 'semarang') {
+              $areak = 'Semarang';
+            } elseif ($area == 'SEMARANG') {
+              $areak = 'Semarang';
+            } elseif ($area == 'juwana') {
+              $areak = 'Juwana';
+            } elseif ($area == 'JUWANA') {
+              $areak = 'Juwana';
+            } elseif ($area == 'cirebon') {
+              $areak = 'Cirebon';
+            } elseif ($area == 'CIREBON') {
+              $areak = 'Cirebon';
+            } elseif ($area == 'all') {
+              $areak = 'Surabaya';
+            }
+            ?>
           <td class=xl704119 align=right>
             <font face="Verdana"><?php echo $areak ?>,<span style='mso-spacerun:yes'> </span></font>
           </td>
@@ -1746,7 +1746,7 @@ AAAAAA==
         </tr>
         <tr height=15 valign=bottom style='height:11.25pt'>
           <td height=15 colspan="12" class=xl664119 style='height:11.25pt'>
-            <font face="Verdana"><span style='mso-spacerun:yes'>Bersama ini kami dari PT. PRATAMA LANGGENG JAYA<b>,</b></span></font>
+            <font face="Verdana"><span style='mso-spacerun:yes'>Bersama ini kami dari PT. PRATAMA LANGGENG RAYA<b>,</b></span></font>
           </td>
         </tr>
         <tr height=15 valign=bottom style='height:11.25pt'>
@@ -2055,7 +2055,7 @@ AAAAAA==
             <font face="Verdana">:</font>
           </td>
           <td class=xl664119 colspan=6>
-            <font face="Verdana">PT. PRATAMA LANGGENG JAYA</font>
+            <font face="Verdana">PT. PRATAMA LANGGENG RAYA</font>
           </td>
           <td class=xl664119></td>
         </tr>
@@ -2152,7 +2152,7 @@ AAAAAA==
         </tr>
         <tr height=15 valign=bottom style='height:11.25pt'>
           <td height=15 class=xl664119 colspan=10 style='height:11.25pt'>
-            <font face="Verdana"><b>PT. PRATAMA LANGGENG JAYA</b></font>
+            <font face="Verdana"><b>PT. PRATAMA LANGGENG RAYA</b></font>
           </td>
           <td class=xl904119>
             <font face="Verdana">Branch Semarang:</font>
@@ -8325,7 +8325,7 @@ BgAAAAAGAAYAhAEAAG4hAAAAAA==
 
   </div>
 <?php
-    }
+}
 ?>
 <![if !vml]><span style='mso-ignore: vglayout; position: absolute; z-index: 1; margin-left: 3px; margin-top: 5px; width: 637px; height: 107px; left: 1px; top: 1024px;'><img width=787 height=87 src="penawaran_files/semarang2.jpg" v:shapes="Picture_x0020_1 Picture_x0020_2"></span>
 <![endif]><span style='mso-ignore:vglayout2'>
