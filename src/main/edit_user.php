@@ -24,7 +24,7 @@
         <tr>
           <td>Kode User</td>
           <td>
-            <input type="text" class="form-control col-md-7 col-xs-12" placeholder="Masukan kode User ..." name="kode" value="<?php echo $row_update['kode_user']; ?>">
+            <input type="text" class="form-control col-md-7 col-xs-12" placeholder="Masukan kode User ..." name="kode" value="<?php echo $row_update['kode_user']; ?>" />
           </td>
         </tr>
 
@@ -36,7 +36,7 @@
         <tr>
           <td>Nama User</td>
           <td>
-            <input type="text" class="form-control col-md-7 col-xs-12" placeholder="Masukan Nama User ..." name="nama" value="<?php echo $row_update['nama_user']; ?>">
+            <input type="text" class="form-control col-md-7 col-xs-12" placeholder="Masukan Nama User ..." name="nama" value="<?php echo $row_update['nama_user']; ?>" />
           </td>
         </tr>
 
@@ -48,25 +48,29 @@
         <tr>
           <td>No. HP</td>
           <td>
-            <input type="text" class="form-control col-md-7 col-xs-12" placeholder="Masukan No. HP ..." name="hp" value="<?php echo $row_update['hp_user']; ?>">
+            <input type="text" class="form-control col-md-7 col-xs-12" placeholder="Masukan No. HP ..." name="hp" value="<?php echo $row_update['hp_user']; ?>" />
           </td>
         </tr>
         <tr>
           <td>Username</td>
-          <td> <input type="text" class="form-control col-md-7 col-xs-12" placeholder="Masukan username login ..." name="username" value="<?php echo $row_update['username_user']; ?>"></td>
+          <td>
+            <input type="text" class="form-control col-md-7 col-xs-12" placeholder="Masukan username login ..." name="username" value="<?php echo $row_update['username_user']; ?>" />
+          </td>
         </tr>
         <tr>
           <td>Password</td>
-          <td> <input type="password" class="form-control col-md-7 col-xs-12" placeholder="Masukan password ..." name="pass" value="<?php echo $row_update['password_user']; ?>"></td>
+          <td>
+            <input type="password" class="form-control col-md-7 col-xs-12" placeholder="Masukan password ..." name="pass" value="<?php echo $row_update['password_user']; ?>" />
+          </td>
         </tr>
         <tr>
           <td></td>
           <td>
             <div class="col-md-6 col-sm-6 col-xs-12">
               <?php if ($row_update['aktif'] == true) { ?>
-                <input id="check_aktif" type="checkbox" name="aktif" checked />
+                <input id="check_aktif" type="checkbox" name="aktif" checked readonly="readonly" onclick="return false;" />
               <?php } else { ?>
-                <input id="check_aktif" type="checkbox" name="aktif" />
+                <input id="check_aktif" type="checkbox" name="aktif" readonly="readonly" onclick="return false;" />
               <?php } ?>
               <label for="check_aktif">Aktif</label><br>
             </div>

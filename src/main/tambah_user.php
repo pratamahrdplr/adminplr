@@ -52,14 +52,14 @@
         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Username
         </label>
         <div class="col-md-6 col-sm-6 col-xs-12">
-          <input type="text" required="required" class="form-control col-md-7 col-xs-12" name="username" id="1" placeholder="username">
+          <input type="text" required="required" class="form-control col-md-7 col-xs-12" name="username" id="1" placeholder="username" />
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Password
         </label>
         <div class="col-md-6 col-sm-6 col-xs-12">
-          <input type="password" required="required" class="form-control col-md-7 col-xs-12" name="pass" id="2" placeholder="password">
+          <input type="password" required="required" class="form-control col-md-7 col-xs-12" name="pass" id="2" placeholder="password" />
         </div>
       </div>
 
@@ -70,7 +70,7 @@
         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Nama
         </label>
         <div class="col-md-6 col-sm-6 col-xs-12">
-          <input type="text" required="required" class="form-control col-md-7 col-xs-12" name="nama" id="4" placeholder="Nama">
+          <input type="text" required="required" class="form-control col-md-7 col-xs-12" name="nama" id="4" placeholder="Nama" />
         </div>
       </div>
 
@@ -78,7 +78,7 @@
         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Market Area
         </label>
         <div class="col-md-6 col-sm-6 col-xs-12">
-          <input type="text" class="form-control" name="kota_user" value=<?php echo $queryx ?> readonly="readonly">
+          <input type="text" class="form-control" name="kota_user" value=<?php echo $queryx ?> readonly="readonly" />
         </div>
       </div>
 
@@ -88,7 +88,7 @@
         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Phone
         </label>
         <div class="col-md-6 col-sm-6 col-xs-12">
-          <input type="text" required="required" class="form-control col-md-7 col-xs-12" name="hp" id="6" placeholder="Phone" data-inputmask="'mask': '(9999)99-999-999'">
+          <input type="text" required="required" class="form-control col-md-7 col-xs-12" name="hp" id="6" placeholder="Phone" data-inputmask="'mask': '(9999)99-999-999'" />
         </div>
       </div>
 
@@ -96,7 +96,7 @@
         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Aktif
         </label>
         <div class="col-md-6 col-sm-6 col-xs-12">
-          <input type="checkbox" required="required" name="aktif" id="7" placeholder="Aktif" checked="checked">
+          <input type="checkbox" required="required" name="aktif" id="7" placeholder="Aktif" readonly="readonly" onclick="return false;" />
         </div>
       </div>
 

@@ -84,11 +84,11 @@
                             <?php echo $row['level_user']; ?>
                         </td>
 
-                        <td class="a-center ">
+                        <td class="a-center">
                             <?php if ($row['aktif'] == 1) { ?>
-                                <input readonly="true" type="checkbox" class="flat" checked />
+                                <?php echo 'Aktif'; ?>
                             <?php } else { ?>
-                                <input readonly="true" type="checkbox" class="flat" />
+                                <?php echo 'Tdk Aktif'; ?>
                             <?php } ?>
                         </td>
 
